@@ -1,0 +1,116 @@
+:root {
+  --theme-color:rgb(255,255,255);
+  --text-color:rgb(0,0,0);
+  --text-style:Nova Mono;
+  --bg-color:rgb(93,172,129);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--text-style);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+body header {
+  position: relative;
+  background-image: url(../reMakePicture/other/Dragon.JPG);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  height: 30vh;
+}
+body header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+body header .logo-area {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-weight: bold;
+}
+body header .logo-area img {
+  width: 100px;
+  margin-left: 5rem;
+}
+body header .logo-area p {
+  margin-bottom: 0;
+}
+body main hr {
+  border-radius: 2px;
+}
+body main div nav {
+  height: 60vh;
+}
+body main div ul {
+  padding-left: 0;
+  width: 100%;
+}
+body main div ul li.nav-item {
+  list-style: none;
+  width: inherit;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+body main div ul li.nav-item button {
+  margin-bottom: 0.5rem;
+  width: 100%;
+  border-radius: 10px;
+}
+body main div ul li.nav-item button:hover {
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  color: var(--text-color);
+}
+body main div .main-area {
+  height: 65vh;
+  overflow-y: overlay;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+body main div .main-area .slogan {
+  text-align: center;
+}
+body main div .main-area h1 {
+  text-align: center;
+}
+body main div .main-area .carousel-inner {
+  height: 400px;
+  background-color: rgb(133, 133, 133);
+}
+body main div .main-area .carousel-inner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vh;
+}
+body footer p {
+  margin-bottom: 0rem;
+  font-size: 0.8rem;
+}
+
+@font-face {
+  font-family: "MyCustomFont";
+  src: url(../ttf/Designer.otf) format("truetype");
+  font-weight: lighter;
+  font-style: normal;
+}
+@media (max-width: 1000px) {
+  .bg-line {
+    border: none;
+  }
+}/*# sourceMappingURL=style.css.map */

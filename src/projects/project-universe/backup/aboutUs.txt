@@ -1,0 +1,32 @@
+aboutUs: `
+            <div class="container d-xl-flex d-md-block align-items-center">
+        <div class="me-2 col col-xxl-6 mb-md-4">
+            <img class="aboutimg img-fluid w-50" src="./reMakePicture/image-solid (5).svg" alt="">
+        </div>
+        <div class="me-2 px-3 col col-xxl-6 mb-md-4">
+            <p class="">
+                面對未知的新事物，生命會做出怎樣的回應？當與其他存在產生交會，那一刻不只是接觸，更是宇宙間能量的交流。自然界中的蟲鳴鳥語、風聲草動，無不蘊含著宇宙脈動的節奏，引領我們向內感知、向外連結。從不敢靠近到勇敢接觸，哪怕只是彼此更靠近了一點，對心靈而言，都是跨越了一座看不見的星山。只要我們不以俯視的角度評斷，而是選擇與萬物同行，就能一同沉浸於這場宇宙與生命交織的旅程之中。
+            </p>
+            <a class="text-decoration-none" href="#">Exploring the Universe</a>
+        </div>
+    </div>
+    <hr class="border border-2 border-dark mt-1">
+    <div class="container-xl mb-2">
+        <div class="row">
+            <img class="col col-xxl-4 col-md-12 img-fluid mx-auto d-block" style="max-width: 400px;"
+                src="./reMakePicture/image-solid (5).svg" alt="">
+            <div class="col col-xxl-8 col-md-12">
+                <h1 class=" mx-auto d-block  teacher-name">斑鳩老師</h1>
+    
+                <ul class=" mx-auto d-block fs-5 description">
+                    <li class="list-unstyled">環境教育專業人員（認證編號 EE209-XXXX）</li>
+                    <li class="list-unstyled">台灣宇宙探索聯盟 專案策劃暨執行統籌（2019 至今</li>
+                    <li class="list-unstyled">國立臺灣XX大學 環境資源與漁業科學系 學士</li>
+                    <li class="list-unstyled">國立臺灣XX大學 生態溝通與教育推廣團</li>
+                    <li class="list-unstyled">2013年XX大學「夜光精靈—螢火蟲特展」活動企劃組</li>
+                    <li class="list-unstyled">創意表演社 團隊講師（魔術與互動教學設計）</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <hr class="border border-2 border-dark mt-1">`,

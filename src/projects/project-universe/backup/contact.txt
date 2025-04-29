@@ -1,0 +1,29 @@
+<div class="container">
+<div class="row">
+    <div class="col">
+        
+        <div class="">
+            <table class="">
+                <caption style="caption-side: top;"><h3 class="fw-bold">聯絡資訊</h3></caption>
+                <tr class="border-bottom ">
+                    <th class="">聯絡人：</th>
+                    <th class="">斑鳩老師</th>
+                </tr>
+                <tr class="border-bottom ">
+                    <th>Email:</th>
+                    <th>enjoynature24@gmail.com</th>
+                </tr>
+                <tr class="border-bottom ">
+                    <th>Tel:</th>
+                    <th>0922-340-049</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="community-web">
+        <a target="_blank" href="https://www.facebook.com/enjoynaturetogether"><img src="./icon/facebook.svg" alt="FBicon" class="my-2" style="width: 50px;"></a>
+    </div>
+</div>
+</div>
+<iframe src="https://calendar.google.com/calendar/embed?src=bboynoice%40gmail.com&ctz=Asia%2FTaipei" class="mt-2" style="border:0; width:800px; max-width:800px; height:500px;
+                    frameborder:0; scrolling:no;"></iframe>
