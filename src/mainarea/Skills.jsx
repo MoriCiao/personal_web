@@ -1,5 +1,5 @@
 import React from "react";
-import SkillList from "./Skill";
+import SkillList from "./skill";
 const Skill = () => {
   return (
     <section id="skill">

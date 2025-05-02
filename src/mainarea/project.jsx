@@ -5,7 +5,7 @@ function Project() {
     {
       a_tag: "src/projects/project-universe/universe.html",
       name: "宇宙教學網站",
-      p: "此專案會利用Bootstap 及 RWD排版。",
+      p: "此專案為一個範例網站，利用Bootstrap 及 RWD排版。",
       img: "/public/projests-picture/nature/forest.jpg",
       state: "Done",
     },
@@ -17,10 +17,17 @@ function Project() {
       state: "施工中...",
     },
     {
-      a_tag: "",
-      name: "Tools",
-      p: "製作一些簡單的小工具",
-      img: "/public/S__1974276_0.jpg",
+      a_tag: "src/projects/simpleCalculator/calculator.html",
+      name: "Simple Calculator",
+      p: "JS製作的簡易的計算機",
+      img: "/public/iconImg/calculator-solid.svg",
+      state: "施工中...",
+    },
+    {
+      a_tag: "#",
+      name: "To DO List",
+      p: "用 React 製作一個備忘錄。",
+      img: "/public/iconImg/calculator-solid.svg",
       state: "施工中...",
     },
   ];
@@ -40,7 +47,7 @@ function Project() {
                 <img
                   src="public\iconImg\hammer-solid.svg"
                   alt=""
-                  style={{ width: "20px", marginRight: "5px" }}
+                  style={{ width: "15px", marginRight: "5px" }}
                   className="state"
                 />
                 {project.state}

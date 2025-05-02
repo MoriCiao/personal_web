@@ -65,6 +65,9 @@ body div.space header {
 body div.space header div section {
   position: relative;
 }
+body div.space header div section .useState-area {
+  animation: changeScale 8s infinite;
+}
 body div.space header div section .info-area {
   padding: 3%;
 }
@@ -102,36 +105,6 @@ body div.space header div section .shortcut ul li a:hover div {
   border-color: var(--text-color-2);
   width: 4rem;
 }
-body div.space header div section .shortcut .todoslist {
-  display: flex;
-  flex-direction: column;
-}
-body div.space header div section .shortcut .todoslist input {
-  width: 200px;
-  background: var(--theme-color);
-  color: var(--text-color);
-  text-indent: 0.5rem;
-}
-body div.space header div section .shortcut .todoslist ul li {
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-height: 3rme;
-}
-body div.space header div section .shortcut .todoslist ul li p {
-  width: 150px;
-  background-color: antiquewhite;
-  overflow: hidden;
-  margin-right: 0.5rem;
-  margin-bottom: 0;
-}
-body div.space header div section .shortcut .todoslist ul li button {
-  border-radius: 10px;
-  width: 100px;
-  background-color: var(--theme-color);
-  color: white;
-}
 body div.space header div section form {
   display: flex;
   flex-direction: column;
@@ -147,7 +120,10 @@ body div.space header div section form textarea {
 body div.space header div section form textarea {
   height: 5rem;
 }
-body div.space header div section form button {
+body div.space header div section form .submit-area {
+  display: flex;
+}
+body div.space header div section form .submit-area button {
   background-color: var(--theme-color);
   color: var(--text-color);
   box-shadow: inset 1px 1px 3px white;
@@ -155,48 +131,17 @@ body div.space header div section form button {
   width: 6rem;
   border-radius: 0.3rem;
 }
-body div.space header div section form button:active {
+body div.space header div section form .submit-area button:active {
   box-shadow: inset 1px 1px 3px black, 2px 2px 5px rgb(0, 0, 0);
 }
-body div.space header .counter {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin: 0.5rem;
-}
-body div.space header .counter .count {
-  width: 6rem;
-  padding: 0.5rem;
-  font-size: 4rem;
-  padding-right: 100px;
-  text-shadow: white 2px 2px 5px;
-  transition: all 0.3s ease;
-}
-body div.space header .counter .animate {
-  transform: scale(1.1);
-  color: rgb(255, 164, 45);
-  text-shadow: rgba(148, 84, 0, 0.8) 10px -10px 3px;
-}
-body div.space header .counter button {
-  text-align: center;
-  padding: 0.5rem;
-  margin-left: 0.5rem;
-  width: 3rem;
-  border: none;
-  border-radius: 10px;
-  box-shadow: #000000 2px 2px 5px, inset 5px 5px 5px white;
-  background-color: var(--text-color);
-}
-body div.space header .counter button:active {
-  box-shadow: #000000 2px 2px 2px, inset 2px 2px 10px rgb(0, 0, 0);
-}
-body div.space header .date {
+body div.space header div section form .submit-area .date {
   text-align: end;
   margin-top: 0.5rem;
+  margin-left: 0.5rem;
   font-weight: bold;
   animation: changeTimeColor 8s infinite;
 }
-body div.space header .date p {
+body div.space header div section form .submit-area .date p {
   margin-bottom: 0;
 }
 body main {
@@ -242,11 +187,11 @@ body main section div .skill span:hover {
   cursor: pointer;
 }
 body main section div .o-skillarea {
-  -moz-columns: 2;
-       columns: 2;
   width: inherit;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-wrap: wrap;
+  gap: 0.5rem;
   margin-top: 5%;
 }
 body main section div .o-skill {
@@ -263,7 +208,11 @@ body main section div .o-skill p {
   margin-bottom: 0;
   font-size: 1.2rem;
 }
+body main section .react-project {
+  padding-top: 1rem;
+}
 body main section a {
+  height: 100px;
   display: flex;
   text-decoration: none;
   gap: 2px;
@@ -271,27 +220,36 @@ body main section a {
   transition: transform 0.5s ease;
   margin-top: 5%;
   border-radius: 5px;
-}
-body main section a p {
-  margin-bottom: 0;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  overflow: hidden;
 }
 body main section a .img-container {
-  max-width: 7.5rem;
+  min-width: 130px;
+  width: 5rem;
+  border-radius: 5px;
+  overflow: hidden;
 }
 body main section a .img-container .project-img {
+  display: flex;
+  justify-content: center;
+  margin: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 100%;
-  height: 100%;
   border-radius: 10px;
+  width: 90%;
+  height: 100%;
   transition: all 0.3s ease;
 }
 body main section a .description {
   margin-left: 0.5rem;
   min-width: 300px;
   width: 100%;
+}
+body main section a .description p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
+  transition: all 1s ease;
 }
 body main section a .description .state {
   color: white;
@@ -300,9 +258,18 @@ body main section a .description .state {
 body main section a:hover {
   box-shadow: 3px 3px 10px rgb(0, 0, 0);
   transform: translate(-10px, -10px);
+  height: 125px;
+}
+body main section a:hover .img-container {
+  border-radius: 10px;
 }
 body main section a:hover .project-img {
-  transform: scale(1.1);
+  overflow: hidden;
+  transform: scale(1.05);
+}
+body main section a:hover p {
+  text-overflow: clip;
+  white-space: wrap;
 }
 body footer {
   height: 5vh;
@@ -369,5 +336,19 @@ body footer p {
   }
   66% {
     color: rgb(66, 255, 79);
+  }
+}
+@keyframes changeScale {
+  0% {
+    font-weight: 100;
+    color: aqua;
+  }
+  25% {
+    font-weight: 900;
+    color: rgb(255, 96, 96);
+  }
+  75% {
+    font-weight: 100;
+    color: rgb(255, 191, 96);
   }
 }/*# sourceMappingURL=index.css.map */

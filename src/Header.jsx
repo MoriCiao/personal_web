@@ -1,8 +1,15 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import Timer from "./timer";
 
 const Header = () => {
+  // 新增旅客，當Name 被輸入時，上方名稱會自動修正。
+  const [name, setName] = useState("");
+  const HandleChangeName = (e) => {
+    setName(e.target.value);
+    console.log(`使用者在input輸入 ${e.target.value}`);
+  };
+
   const inputElement = useRef(null);
   // 第一次載入頁面時，focus在表格內。
   useEffect(() => {
@@ -15,8 +22,9 @@ const Header = () => {
         <section className="info-area">
           <div className="info">
             <h1>
-              Hi， I'm <br />
-              <strong>Losen</strong>
+              Hi <span className="useState-area">{name || "Stranger"}</span>，
+              I'm <br />
+              <strong>Rosen</strong>
             </h1>
             <p>
               目前對於網頁前端開發持續學習中，由於是處於轉行當中的我，對HTML、CSS、JavaScript、React較為熟悉。現代科技一直在進步，個人的技能也需要向未來持續增進。
@@ -61,6 +69,7 @@ const Header = () => {
                 type="text"
                 placeholder="Your name or Business units"
                 ref={inputElement}
+                onChange={HandleChangeName}
               />
               <label htmlFor="">Email</label>
               <input name="email" type="email" placeholder="Email Address" />
@@ -71,11 +80,12 @@ const Header = () => {
                 placeholder="Your Message ..."
                 required
               ></textarea>
-
-              <button type="submit">submit</button>
+              <div className="submit-area">
+                <button type="submit">submit</button>
+                <Timer />
+              </div>
             </form>
           </div>
-          <Timer />
         </section>
       </div>
     </header>
