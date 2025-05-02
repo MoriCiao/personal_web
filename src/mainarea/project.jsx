@@ -7,10 +7,10 @@ function Project() {
       name: "宇宙教學網站",
       p: "此專案會利用Bootstap 及 RWD排版。",
       img: "/public/projests-picture/nature/forest.jpg",
-      state: "施工中...",
+      state: "Done",
     },
     {
-      a_tag: "https://github.com/MoriCiao/test",
+      a_tag: "https://github.com/MoriCiao/Friend-s-Portfolio",
       name: "Hana Portfolio",
       p: "協助製作友人的Portfolio。",
       img: "/public/S__1974276_0.jpg",

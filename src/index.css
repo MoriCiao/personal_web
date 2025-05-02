@@ -266,36 +266,36 @@ body main section div .o-skill p {
 body main section a {
   display: flex;
   text-decoration: none;
-  gap: 15px;
+  gap: 2px;
   color: var(--text-color);
   transition: transform 0.5s ease;
   margin-top: 5%;
-  padding: 2%;
   border-radius: 5px;
 }
 body main section a p {
   margin-bottom: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 body main section a .img-container {
-  overflow: hidden;
   max-width: 7.5rem;
-  height: auto;
-  border-radius: 5px;
 }
 body main section a .img-container .project-img {
-  max-width: 7.5rem;
-  height: 100%;
-  border-radius: 5px;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
   transition: all 0.3s ease;
 }
-body main section a .state {
+body main section a .description {
+  margin-left: 0.5rem;
+  min-width: 300px;
+  width: 100%;
+}
+body main section a .description .state {
   color: white;
   animation: changeColor 10s infinite;
-}
-body main section a .description {
-  margin-left: 2%;
 }
 body main section a:hover {
   box-shadow: 3px 3px 10px rgb(0, 0, 0);
@@ -319,12 +319,6 @@ body footer p {
 }
 
 @media (max-width: 1200px) {
-  header {
-    overflow: overlay;
-    scrollbar-width: none;
-  }
-}
-@media (max-width: 1023px) {
   div.bg-blur {
     background-position: 10rem 5rem !important;
   }
@@ -334,6 +328,8 @@ body footer p {
     height: auto;
   }
   div.space header.header {
+    overflow: overlay;
+    scrollbar-width: none;
     width: 70vw;
     overflow: visible;
     height: auto;

@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 import Timer from "./timer";
 
 const Header = () => {
+  const inputElement = useRef(null);
+  // 第一次載入頁面時，focus在表格內。
+  useEffect(() => {
+    inputElement.current.focus();
+  }, []);
+
   return (
     <header className="header">
       <div>
@@ -54,6 +60,7 @@ const Header = () => {
                 name="name"
                 type="text"
                 placeholder="Your name or Business units"
+                ref={inputElement}
               />
               <label htmlFor="">Email</label>
               <input name="email" type="email" placeholder="Email Address" />

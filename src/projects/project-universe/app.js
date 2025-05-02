@@ -97,9 +97,9 @@ const pages = {
                 <hr class="border border-2 border-dark">
             `,
   aboutUs: `
-            <div class="container d-xl-flex d-md-block align-items-center">
-        <div class="me-2 col col-xxl-6 mb-md-4">
-            <img class="aboutimg img-fluid w-50" src="./reMakePicture/image-solid (5).svg" alt="">
+            <div class="container d-xl-flex d-md-block align-items-center ">
+        <div class="me-2 col col-xxl-6 mb-md-4 d-flex justify-content-center">
+            <img class="aboutimg w-50 m-auto" src="./reMakePicture/image-solid (5).svg" alt="">
         </div>
         <div class="me-2 px-3 col col-xxl-6 mb-md-4">
             <p class="">
