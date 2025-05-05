@@ -1,26 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
 // 從父元素獲取data資料
 const SearchPhoto = ({ data, morePhoto }) => {
-  // const photoRef = useRef(null);
-  // const [isVisible, setIsVisible] = useState(false);
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver(([entry]) => {
-  //     if (entry.isIntersecting) {
-  //       setIsVisible(true);
-  //       observer.unobserve(entry.target); // 只觀察一次
-  //     }
-  //   });
+  const photoRef = useRef(null);
 
-  //   if (photoRef.current) {
-  //     observer.observe(photoRef.current);
-  //   }
-
-  //   return () => {
-  //     if (photoRef.current) {
-  //       observer.unobserve(photoRef.current);
-  //     }
-  //   };
-  // }, []);
   return (
     <div className="photo-area">
       <div className="photo-bg"></div>
@@ -29,7 +11,7 @@ const SearchPhoto = ({ data, morePhoto }) => {
       {data &&
         data.map((d, index) => {
           return (
-            <div className="per-photo-area" key={index}>
+            <div ref={photoRef} className={`per-photo-area`} key={index}>
               <p className="photo-text">
                 Photographer: <br />
                 {d.photographer}
@@ -38,11 +20,9 @@ const SearchPhoto = ({ data, morePhoto }) => {
               <div className="photo-container">
                 <img src={d.src.large} alt="..." className="photo" />
               </div>
-
               <p>
-                Download{" "}
                 <a href={d.src.large} target="_blank">
-                  Click
+                  Download
                 </a>
                 <a href={d.photographer_url} className="blog">
                   <span className="blog-icon">👉</span>
