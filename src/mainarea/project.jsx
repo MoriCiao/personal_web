@@ -10,7 +10,7 @@ function Project() {
       state: "Done",
     },
     {
-      a_tag: "https://github.com/MoriCiao/Friend-s-Portfolio",
+      a_tag: "#",
       name: "Hana Portfolio",
       p: "協助製作友人的Portfolio。",
       img: "/public/S__1974276_0.jpg",
@@ -27,7 +27,14 @@ function Project() {
       a_tag: "#",
       name: "To DO List",
       p: "用 React 製作一個備忘錄。",
-      img: "/public/iconImg/calculator-solid.svg",
+      img: "/public/iconImg/list-ul-solid.svg",
+      state: "施工中...",
+    },
+    {
+      a_tag: "/src/projects/search/search.html",
+      name: "Search Image",
+      p: "獲取API，可以搜尋圖片",
+      img: "/public/iconImg/camera-solid.svg",
       state: "施工中...",
     },
   ];
