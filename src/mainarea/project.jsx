@@ -24,7 +24,7 @@ function Project() {
       state: "施工中...",
     },
     {
-      a_tag: "#",
+      a_tag: "src/projects/project-todolist/TodoList.html",
       name: "To DO List",
       p: "用 React 製作一個備忘錄。",
       img: "/public/iconImg/list-ul-solid.svg",

@@ -1,0 +1,308 @@
+@charset "UTF-8";
+/*
+UI 顏色與風格 
+使用柔和的背景色（淺灰、米白）讓任務清楚顯示 
+使用綠色或藍色表示已完成、紅色表示重要任務 
+加入動畫過渡（例如任務完成時淡出）
+*/
+:root {
+  --theme-color:rgb(250, 228, 179);
+  --border-color:#CA7A2C;
+  --text-color: #dea46a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body.light {
+  color: black;
+}
+
+body.dark {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+.theme-change {
+  border: 1px rgba(0, 0, 0, 0.6) solid;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black, inset 2px 2px 2px rgba(255, 255, 255, 0.3);
+  background-color: transparent;
+  padding: 0.5rem;
+  position: absolute;
+  font-weight: bold;
+  right: 0;
+  margin: 1rem;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+.theme-change:hover {
+  transform: translate(-2px, -2px);
+}
+.theme-change:active {
+  box-shadow: inset 2px 2px 2px black;
+}
+
+.btn-dark {
+  color: white;
+  background-color: transparent;
+}
+
+.themeInput {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.themeAddBtn {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white;
+}
+
+body {
+  transition: all 0.5s ease;
+  background-color: var(--theme-color);
+}
+body .header-area {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  overflow-y: overlay;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+body .bg-img {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../public/bg.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  filter: blur(1px);
+  opacity: 0.3;
+  position: fixed;
+  z-index: -1;
+}
+body .todolist {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+}
+body .todolist fieldset {
+  transition: 0.5s all ease;
+  margin: auto;
+  box-sizing: content-box;
+  width: 300px;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 3px rgb(0, 0, 0) double;
+}
+body .todolist legend {
+  text-align: center;
+  font-size: 2rem;
+  padding: 0 3rem 0 3rem;
+  font-weight: 600;
+}
+body .todolist .input-area {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  border: gray 1px solid;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px black;
+  overflow: hidden;
+}
+body .todolist .input-area input, body .todolist .input-area button {
+  border: none;
+  height: 1.5rem;
+}
+body .todolist .input-area input {
+  width: 80%;
+  text-indent: 10px;
+}
+body .todolist .input-area button {
+  border-style: none;
+  width: 20%;
+  padding: 5px;
+  background-color: var(--theme-color);
+}
+body .todolist .list-body {
+  width: 100%;
+}
+body .todolist .list-body .list-area {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  gap: 1rem;
+  width: 100%;
+  overflow-y: overlay;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  transition: all 1s ease-in-out;
+}
+body .todolist .list-body .list-area li {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  border: 1px rgba(0, 0, 0, 0.2) solid;
+  border-radius: 5px;
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+  height: 100px;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: start;
+  justify-content: flex-start;
+  position: relative;
+}
+body .todolist .list-body .list-area li .li-bg {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  filter: blur(10px);
+}
+body .todolist .list-body .list-area li .li-sapce {
+  font-size: 1rem;
+  width: 100%;
+  padding-top: 0.7rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: flex-start;
+}
+body .todolist .list-body .list-area li .deadLine {
+  width: 100%;
+  position: relative;
+  padding-left: 0.5rem;
+  background-color: transparent;
+  display: block;
+}
+body .todolist .list-body .list-area li .deadLine label {
+  padding-right: 0.5rem;
+}
+body .todolist .list-body .list-area li .deadLine input {
+  transition: all 1s ease;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  padding: 0 0.4rem 0 0.2rem;
+  font-size: 0.75rem;
+}
+body .todolist .list-body .list-area li .deadLine button {
+  position: absolute;
+  bottom: -0.2rem;
+  right: 0.5rem;
+  background-color: transparent;
+  margin-left: auto;
+  border: none;
+}
+body .todolist .list-body .list-area li .deadLine button img {
+  width: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+body .todolist .list-body .list-area li .strikethrough {
+  text-decoration: line-through;
+  color: gray;
+  transition: all 0.3 ease;
+}
+body .todolist .list-body .list-area li .todo-thing {
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+}
+body .todolist .list-body .list-area li p {
+  font-weight: bold;
+  padding-left: 0.5rem;
+}
+body .todolist .list-body .list-area li .no-awesome {
+  display: none;
+}
+body .todolist .list-body .list-area li .awesome {
+  font-size: 0.8rem;
+  display: block;
+  transition: all 1s ease-in-out;
+  text-shadow: 2px 2px 2px rgb(95, 95, 95);
+  animation: awesome 1s forwards;
+}
+@keyframes awesome {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-10px) scale(3) rotate(15deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body .todolist .list-body .list-area li hr {
+  width: 100%;
+}
+body .timer-area {
+  padding-top: 2rem;
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  gap: 1rem;
+}
+body .timer-area button {
+  background-color: transparent;
+  padding: 3px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+body .timer-area button:hover {
+  box-shadow: 2px 2px 5px black;
+  text-shadow: -1px -1px 5px white;
+  transform: translate(-2px, -2px);
+}
+
+@media (max-width: 950px) {
+  body {
+    height: 100vh;
+  }
+  .list-header {
+    margin: auto;
+    display: block;
+  }
+  .list-area {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem;
+    width: 100vw;
+    align-items: center;
+    overflow-y: overlay;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+  }
+  .list-area li {
+    max-width: 80vw !important;
+  }
+}
+@media (max-width: 768px) {
+  .list-area {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  li {
+    margin: auto;
+  }
+}/*# sourceMappingURL=todoApp.css.map */
