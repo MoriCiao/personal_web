@@ -13,29 +13,29 @@ function Project() {
       a_tag: "#",
       name: "Hana Portfolio",
       p: "協助製作友人的Portfolio。",
-      img: "/public/S__1974276_0.jpg",
+      img: "/public/projests-picture/hana/1747461275694.jpg",
       state: "施工中...",
     },
     {
       a_tag: "src/projects/simpleCalculator/calculator.html",
       name: "Simple Calculator",
       p: "JS製作的簡易的計算機",
-      img: "/public/iconImg/calculator-solid.svg",
+      img: "/public/projests-picture/calculator/1747460931846.jpg",
       state: "施工中...",
     },
     {
       a_tag: "src/projects/project-todolist/TodoList.html",
       name: "To DO List",
       p: "用 React 製作一個備忘錄。",
-      img: "/public/iconImg/list-ul-solid.svg",
-      state: "施工中...",
+      img: "/public/projests-picture/todo/note.jpg",
+      state: "Done",
     },
     {
       a_tag: "/src/projects/search/search.html",
       name: "Search Image",
-      p: "獲取API，可以搜尋圖片",
-      img: "/public/iconImg/camera-solid.svg",
-      state: "施工中...",
+      p: "輸入API Key，可以搜尋圖片",
+      img: "/public/projests-picture/search/S__48201744.jpg",
+      state: "Done",
     },
   ];
 
@@ -50,15 +50,7 @@ function Project() {
             <div className="description">
               <h4>{project.name}</h4>
               <p>{project.p}</p>
-              <p className="state">
-                <img
-                  src="public\iconImg\hammer-solid.svg"
-                  alt=""
-                  style={{ width: "15px", marginRight: "5px" }}
-                  className="state"
-                />
-                {project.state}
-              </p>
+              <p className="state">{project.state}</p>
             </div>
           </a>
         </React.Fragment>

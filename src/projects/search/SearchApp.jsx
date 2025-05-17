@@ -4,7 +4,7 @@ import "./search.css";
 import SearchBody from "./SearchBody.jsx";
 
 createRoot(document.getElementById("searchRoot")).render(
-  <StrictMode>
-    <SearchBody />
-  </StrictMode>
+  // <StrictMode>
+  <SearchBody />
+  // </StrictMode>
 );

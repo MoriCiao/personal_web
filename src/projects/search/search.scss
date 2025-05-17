@@ -8,11 +8,37 @@
     box-sizing: border-box;
 }
 body{
+    position: relative;
     color: white;
     
 }
 .main-space{
+    
     display: flex;
+}
+.api_key_modal{
+    max-width: 80%;
+    width: 300px;
+    position: absolute;
+    z-index:  2;
+    padding: 1rem;
+    border: 1px rgb(126, 126, 126) solid;
+    border-radius: 1rem;
+    background: rgba(44, 44, 44, 0.3);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0),inset 5px 5px 10px rgba(255,255,255,.5);
+    display: grid;
+    flex-direction: column;
+    gap: 0.7rem;
+    text-align: center;
+    top: 10%;
+    left: 25%;
+    
+    
+    input,button{
+        color: white;
+    border-radius: 5px;
+    background-color: rgb(92, 92, 92);
+    }
 }
 .header-area{
     // 左側AREA
@@ -223,6 +249,13 @@ body{
 
 }
 @media (max-width :768px) {
+    .api_key_modal{
+        top: 40%;
+        left: 30%;
+        margin: auto;
+    }
+    
+    
     .main-space {
         display: block;
         flex-direction: column;

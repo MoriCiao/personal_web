@@ -3,11 +3,19 @@ import SearchFooter from "./SearchFooter";
 const SearchHead = ({ inputValue, handleChange, search }) => {
   // 搜尋連動
   const inputRef = useRef(null);
-
+  const btnRef = useRef(null);
   useEffect(() => {
+    // 第一次加載時，監聽按鍵 Enter 是否有被 keydown => search
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        if (btnRef.current) {
+          btnRef.current.click();
+        }
+      }
+    });
     inputRef.current.focus();
   }, []);
-
   return (
     <div className="header-area">
       <div>
@@ -24,7 +32,7 @@ const SearchHead = ({ inputValue, handleChange, search }) => {
           onChange={handleChange}
           ref={inputRef}
         />
-        <button className="Search-button" onClick={search}>
+        <button className="Search-button" onClick={search} ref={btnRef}>
           Search
         </button>
       </div>
