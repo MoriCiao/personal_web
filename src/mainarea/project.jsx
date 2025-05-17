@@ -31,11 +31,18 @@ function Project() {
       state: "Done",
     },
     {
-      a_tag: "/src/projects/search/search.html",
+      a_tag: "/src/projects/project-search/search.html",
       name: "Search Image",
-      p: "輸入API Key，可以搜尋圖片",
+      p: "輸入API Key，搜尋圖片",
       img: "/public/projests-picture/search/S__48201744.jpg",
       state: "Done",
+    },
+    {
+      a_tag: "src/projects/project-cart/cart.html",
+      name: "Cart",
+      p: "",
+      img: "/public/projests-picture/cart/1747462770596.jpg",
+      state: "施工中...",
     },
   ];
 
