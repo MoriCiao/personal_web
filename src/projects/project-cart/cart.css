@@ -11,6 +11,11 @@
   background-color: rgb(180, 180, 180);
 }
 
+body {
+  overflow: hidden;
+  overflow-y: overlay;
+  transition: all 0.3s ease;
+}
 body .header {
   position: relative;
 }
@@ -43,4 +48,7 @@ body .light-area .bulb button {
   background-color: rgb(171, 162, 150);
   box-shadow: 2px 2px 5px gray, inset 2px 2px 2px white;
   margin: 0.5rem;
+}
+body .img_container {
+  border-radius: 20px;
 }/*# sourceMappingURL=cart.css.map */

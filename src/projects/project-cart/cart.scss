@@ -4,6 +4,7 @@
     
 }
 .bulb-light {
+    
     background-color: rgb(255, 233, 111);
 }
 
@@ -11,7 +12,10 @@
     background-color: rgb(180, 180, 180);
 }
 body {
+    overflow:hidden ;
+    overflow-y:overlay;
     
+    transition: all 0.3s ease;
 
     .header{
         position: relative;
@@ -48,5 +52,12 @@ body {
                 
             }
         }
+    }
+
+
+
+    // product area
+    .img_container{
+        border-radius: 20px;
     }
 }

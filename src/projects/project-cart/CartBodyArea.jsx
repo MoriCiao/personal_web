@@ -1,15 +1,13 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 import CartHeader from "./CartHeaderArea";
-import CartMain from "./CartMainArea";
+import CartMain from "./ProductPage";
 
 export const ThemeContext = createContext();
 
 const CartBody = () => {
   const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState("bulb-dark");
-    // const ToggleTheme = () => {
-    //   setTheme((prev) => (prev === "bulb-dark" ? "bulb-light" : "bulb-dark"));
-    // };
+
     useEffect(() => {
       document.body.className = "";
       document.body.classList.add(theme);

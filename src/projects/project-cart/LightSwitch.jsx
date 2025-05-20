@@ -1,9 +1,17 @@
-import React, { useContext, useEffect, useReducer } from "react";
+import React, { useContext, useEffect, useReducer, useState } from "react";
 import { ThemeContext } from "./CartBodyArea";
 
 const Light = () => {
-  const { theme } = useContext(ThemeContext);
-  console.log(theme); // deBug確認Provider有連動
+  const { theme, setTheme } = useContext(ThemeContext);
+  // console.log(theme); // deBug確認Provider有連動
+  // const [lighting, setLight] = useState(false);
+  // if (lighting) {
+  //   setTheme("bulb-light");
+  //   setLight(false);
+  // } else {
+  //   setTheme("bulb-dark");
+  //   setLight(true);
+  // }
 
   const initailState = { isOn: false };
 
@@ -21,17 +29,17 @@ const Light = () => {
   };
   function LightSwith() {
     const [lightState, dispatch] = useReducer(lightReducer, initailState);
-    const { setTheme } = useContext(ThemeContext);
+    // 當燈泡開啟 body的主題要變換
     useEffect(() => {
       if (lightState.isOn) {
         setTheme("bulb-light");
       } else {
         setTheme("bulb-dark");
       }
-    }, [lightState.isOn]);
+    }, [theme]);
     return (
       <div className="bulb">
-        <h1>Light Switch</h1>
+        <h1 className="text-xl">Light Switch</h1>
         <img
           src={
             lightState.isOn
@@ -64,7 +72,6 @@ const Light = () => {
           style={{ border: "1px gray solid", borderRadius: "10px" }}
           onClick={() => {
             dispatch({ type: "Turn_Off" });
-            ToggleTheme();
           }}
         >
           Turn Off
