@@ -12,11 +12,18 @@
     background-color: rgb(180, 180, 180);
 }
 body {
-    overflow:hidden ;
-    overflow-y:overlay;
+    overflow-y: overlay;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
     
     transition: all 0.3s ease;
-
+    // 所有的按鈕
+    button{
+        background-color: antiquewhite;
+        border-radius: 0.5rem;
+        padding: 0 0.5rem 0 0.5rem;
+        box-shadow: 1px 1px 5px black;
+    }
     .header{
         position: relative;
 
@@ -60,4 +67,10 @@ body {
     .img_container{
         border-radius: 20px;
     }
+    .product-name{
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
 }

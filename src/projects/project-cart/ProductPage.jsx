@@ -1,8 +1,26 @@
-import React from "react";
-
+import React, { useContext, useState } from "react";
+import { ThemeContext } from "./CartBodyArea.jsx";
+import { motion } from "framer-motion";
 const CartMain = () => {
+  const { isOpen, toggleCart } = useContext(ThemeContext);
+  console.log(isOpen);
+  const [item, setItem] = useState("fruit");
+  const [isChagne, setIChange] = useState(false);
+  const handleItems = (e) => {
+    console.log(e.target.textContext);
+    if (e.target.value === "fruit") {
+      setItem("fruit");
+      console.log(e.target.value);
+    } else if (e.target.value === "daily") {
+      setItem("daily");
+      console.log(e.target.value);
+    }
+  };
+
+  // Daily
+  // 因應cart 開闔 變換商店寬度
   // 第一類商品
-  const items_1 = [
+  const fruit = [
     { id: 1, name: "🍎 Apple - 蘋果香甜可口", price: 30 },
     { id: 2, name: "🍌 Banana - 補充能量的好選擇", price: 20 },
     { id: 3, name: "🍇 Grape - 多汁紫葡萄", price: 40 },
@@ -35,7 +53,7 @@ const CartMain = () => {
     { id: 30, name: "🫒 Olive - 地中海橄欖", price: 26 },
   ];
   // 第二類商品
-  const items_2 = [
+  const daily = [
     { id: 31, name: "🧻 Toilet Paper - 柔軟三層紙", price: 35 },
     { id: 32, name: "🪥 Toothbrush - 牙齒清潔靠它", price: 20 },
     { id: 33, name: "🧼 Soap - 古早味香皂", price: 15 },
@@ -69,34 +87,88 @@ const CartMain = () => {
   ];
 
   return (
-    <div className=" h-full p-12">
-      <div className="products_area h-screen border border-2 border-green-500 grid grid-cols-4 gap-4">
-        {items_1.map((item) => {
-          return (
-            <div key={item.id} className="p-1">
-              <strong className="block py-2">{item.name}</strong>
-              <div className="img_container overflow-hidden rounded-20 border border-b-4 border-r-4">
-                <img
-                  src="/projests-picture/cart/lemon-dark-regular.svg"
-                  alt={item.name}
-                  className="bg-yellow-100 p-4"
-                />
-              </div>
-              <div className="flex items-center mt-2 relative  w-full grid grid-cols-3 ">
-                <p className="pb-0 w-4/3 block col-span-2">
-                  Price :{" "}
-                  <strong className="text-red-500">${item.price}</strong>
-                </p>
-                <button
-                  type="button"
-                  className="bg-blue-200 rounded px-2 py-1 col-span-1"
+    <div className="h-full p-12">
+      {/* 商品切換區域 */}
+      <div className="w-1/4 grid grid-cols-4 gap-0">
+        <button
+          className="block w-16 text-center  border bg-green-200 px-1"
+          value="fruit"
+          onClick={handleItems}
+        >
+          Fruit
+        </button>
+        <button
+          className="block w-16 text-center  border bg-green-200 px-1"
+          value="daily"
+          onClick={handleItems}
+        >
+          Daily
+        </button>
+      </div>
+      <div
+        className={`products_area h-screen grid gap-4 grid-cols-4 transition-all duration-300 ${
+          isOpen ? "w-3/4" : "w-full"
+        } `}
+      >
+        {item === "fruit"
+          ? fruit.map((f) => {
+              return (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                  key={f.id}
+                  className="p-1"
                 >
-                  <span>Add</span>
-                </button>
-              </div>
-            </div>
-          );
-        })}
+                  <strong className="product-name block py-2">{f.name}</strong>
+                  <div className="img_container overflow-hidden rounded-20 border border-b-4 border-r-4">
+                    <img
+                      src="/projests-picture/cart/lemon-dark-regular.svg"
+                      alt={f.name}
+                      className="bg-yellow-100 p-4"
+                    />
+                  </div>
+                  <div className="flex items-center mt-2 relative  w-full grid grid-cols-3 ">
+                    <p className="pb-0 w-4/3 block col-span-2">
+                      Price :{" "}
+                      <strong className="text-red-500">${f.price}</strong>
+                    </p>
+                    <button type="button" className="col-span-1">
+                      <span>Add</span>
+                    </button>
+                  </div>
+                </motion.div>
+              );
+            })
+          : daily.map((d) => {
+              return (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                  key={d.id}
+                  className="p-1"
+                >
+                  <strong className="product-name block py-2">{d.name}</strong>
+                  <div className="img_container overflow-hidden rounded-20 border border-b-4 border-r-4">
+                    <img
+                      src="/projests-picture/cart/box-tissue-dark-solid.svg"
+                      alt={d.name}
+                      className="bg-yellow-100 p-4"
+                    />
+                  </div>
+                  <div className="flex items-center mt-2 relative  w-full grid grid-cols-3 ">
+                    <p className="pb-0 w-4/3 block col-span-2">
+                      Price :{" "}
+                      <strong className="text-red-500">${d.price}</strong>
+                    </p>
+                    <button type="button" className="col-span-1">
+                      <span>Add</span>
+                    </button>
+                  </div>
+                </motion.div>
+              );
+            })}
       </div>
     </div>
   );

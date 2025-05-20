@@ -7,14 +7,19 @@ export const ThemeContext = createContext();
 const CartBody = () => {
   const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState("bulb-dark");
-
+    // 開闔設定
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleCart = () => {
+      setIsOpen(!isOpen);
+      //
+    };
     useEffect(() => {
       document.body.className = "";
       document.body.classList.add(theme);
       console.log(theme);
     }, [theme]);
     return (
-      <ThemeContext.Provider value={{ theme, setTheme }}>
+      <ThemeContext.Provider value={{ theme, setTheme, isOpen, toggleCart }}>
         {children}
       </ThemeContext.Provider>
     );
