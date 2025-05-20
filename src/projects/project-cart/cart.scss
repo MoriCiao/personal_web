@@ -73,4 +73,13 @@ body {
         overflow: hidden;
     }
     
+    .cartItemIcon{
+        max-width: 75px;
+    }
+    .cart-item{
+        background-color: #fff;
+    }
+    .remove-btn{
+        box-shadow: none;
+    }
 }

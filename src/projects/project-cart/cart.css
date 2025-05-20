@@ -63,4 +63,13 @@ body .product-name {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+body .cartItemIcon {
+  max-width: 75px;
+}
+body .cart-item {
+  background-color: #fff;
+}
+body .remove-btn {
+  box-shadow: none;
 }/*# sourceMappingURL=cart.css.map */
