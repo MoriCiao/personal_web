@@ -17,7 +17,7 @@ const CartHeader = () => {
         {isOpen ? "Close Cart" : "Open Cart"}
       </button>
       <div
-        className={`bg-green-100 border border-md fixed top-16 right-0 h-3/4 flex items-start z-40 mt-16 p-2 rounded-md transition-all duration-300 ${
+        className={`cart-body border border-md fixed top-16 right-0 h-3/4 flex items-start z-40 mt-16 p-2 rounded-md transition-all duration-300 ${
           isOpen
             ? "translate-x-0 w-80 right-4 "
             : "translate-x-full w-0 overflow-hidden"

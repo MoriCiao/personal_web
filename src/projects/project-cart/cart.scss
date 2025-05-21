@@ -9,7 +9,7 @@
 }
 
 .bulb-dark {
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(255, 255, 255);
 }
 body {
     overflow-y: overlay;
@@ -27,14 +27,25 @@ body {
     .top-area{
         height: 30vh;
         background-color: #fff;
-        
+        box-shadow: 0rem 0.5rem 50px rgba(0,0,0,.3);
+        position: relative;
+        z-index: 1;
+    }
+    .top-bg {
+        position: absolute;
+        background-image: url(../../../public/projests-picture/cart/topBg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.5;
+        filter: brightness(0.3);
+        z-index: -1;
+        width: 100%;
+        height: 30vh;
         
     }
     .top-img {
-        // background-image: url(../../../public/projests-picture/cart/truck-dark-solid.svg);
-        // background-repeat: no-repeat;
-        // background-size: cover;
-
+        position: relative;
+        z-index: 0;
         object-fit: cover;
         width: 100%;
         img{
@@ -42,11 +53,8 @@ body {
             height: 80%;
             border: 2px rgba(0,0,0,.3) solid;
             border-radius: 50%;
-            transition: all 0.5s ease;
-            &:hover{
-                transform: translate(-5px,-5px);
-                box-shadow: 5px 5px 15px black;
-            }
+            box-shadow:inset 2px 2px 2px rgb(111, 111, 111);
+            
         }
     }
     .search-area{
@@ -73,6 +81,9 @@ body {
     .header{
         position: relative;
 
+    }
+    .cart-body{
+        background-color: rgba(255,255,255,0.5);
     }
     .light-area{
         position: fixed;
@@ -111,6 +122,8 @@ body {
         background-color: rgb(255, 191, 167);
     }
 
+    
+
     // product area
     .img_container{
         border-radius: 20px;
@@ -125,14 +138,19 @@ body {
         max-width: 75px;
     }
     .cart-item{
-        background-color: rgba(255,255,255,0.75);
-        box-shadow: inset -5px -5px 10px rgba(0,0,0,.3) , 2px 2px 5px black ;
+        background-color: rgba(255, 255, 255, 0.7);
         
     }
     .remove-btn{
         box-shadow: none;
     }
+    
     .product-container{
+        
         border-bottom: 1px dotted #888;
+        transition: all 0.3s ease-in;
+        &:hover{
+            background-color: rgba(252, 202, 121, 0.5);
+        }
     }
 }
