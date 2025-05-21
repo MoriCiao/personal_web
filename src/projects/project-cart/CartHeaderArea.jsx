@@ -1,5 +1,5 @@
 import React, { useReducer, useState, useContext } from "react";
-import Light from "./LightSwitch.jsx";
+
 import { ThemeContext } from "./CartBodyArea.jsx";
 const CartHeader = () => {
   const { isOpen, toggleCart, cartItem, dispatch } = useContext(ThemeContext);
@@ -11,22 +11,24 @@ const CartHeader = () => {
   return (
     <div className="header h-full w-full relative">
       <button
-        className="fixed top-4 right-4 rounded-md z-50"
+        className="fixed bottom-4 right-4 rounded-md z-50"
         onClick={toggleCart}
       >
         {isOpen ? "Close Cart" : "Open Cart"}
       </button>
       <div
-        className={`bg-blue-200  fixed top-16 right-0 h-3/4 flex items-start z-40 p-2 rounded-md transition-all duration-300 ${
+        className={`bg-green-100 border border-md fixed top-16 right-0 h-3/4 flex items-start z-40 mt-16 p-2 rounded-md transition-all duration-300 ${
           isOpen
             ? "translate-x-0 w-80 right-4 "
             : "translate-x-full w-0 overflow-hidden"
         }`}
       >
-        <div className="w-full grid grid-row-12">
-          <p className="py-2 ">以下是您選購的商品：</p>
-          <hr />
-          <div className="cart-area  py-2 h-auto max-h-[600px] overflow-y-auto scroll-width-none">
+        <div className="w-full h-full grid grid-rows-12 ">
+          <div className="py-3 row-start-1 row-span-1">
+            <p className="text-xl">以下是您選購的商品：</p>
+            <hr />
+          </div>
+          <div className="cart-area  py-2 my-2 h-auto max-h-[600px] overflow-y-auto scroll-width-none row-start-2 row-span-10">
             {cartItem !== ""
               ? cartItem.map((item) => {
                   return (
@@ -83,10 +85,14 @@ const CartHeader = () => {
                 })
               : "沒東西"}
           </div>
-          <hr />
-          <div className="py-2 flex items-center justify-end">
-            <p>目前購物總金額為：</p>
-            <strong className="text-2xl text-red-500">$ {totlePrice}</strong>
+          <div className="py-2 sticky bottom-0 z-10">
+            <hr />
+            <div className="flex items-center justify-end">
+              <p>目前購物總金額為：</p>
+              <strong className="text-xl text-red-500 pl-12">
+                $ {totlePrice}
+              </strong>
+            </div>
           </div>
         </div>
       </div>

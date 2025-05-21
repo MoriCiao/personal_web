@@ -7,6 +7,8 @@ import React, {
 } from "react";
 import CartHeader from "./CartHeaderArea";
 import CartMain from "./ProductPage";
+import Light from "./LightSwitch.jsx";
+import CartTopArea from "./CartTopArea.jsx";
 
 export const ThemeContext = createContext();
 
@@ -14,7 +16,7 @@ const CartBody = () => {
   const ThemeProvider = ({ children }) => {
     const [theme, setTheme] = useState("bulb-dark");
     // 開闔設定
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
     const toggleCart = () => {
       setIsOpen(!isOpen);
       //
@@ -145,6 +147,8 @@ const CartBody = () => {
   return (
     <div>
       <ThemeProvider>
+        <CartTopArea />
+        <Light />
         <CartHeader />
         <CartMain />
       </ThemeProvider>

@@ -14,19 +14,20 @@ const CartMain = () => {
       console.log(e.target.value);
     }
   };
+
   return (
-    <div className="h-full p-12">
+    <div className="h-full p-12 w-3/4 m-auto">
       {/* 商品切換區域 */}
-      <div className="w-1/4 grid grid-cols-4 gap-0">
+      <div className="w-3/4 flex gap-5">
         <button
-          className="block w-16 text-center  border bg-green-200 px-1"
+          className="sort-btn block w-16 text-center px-1"
           value="fruit"
           onClick={handleItems}
         >
           Fruit
         </button>
         <button
-          className="block w-16 text-center  border bg-green-200 px-1"
+          className="sort-btn block w-16 text-center px-1"
           value="daily"
           onClick={handleItems}
         >
@@ -34,7 +35,7 @@ const CartMain = () => {
         </button>
       </div>
       <div
-        className={`products_area h-screen grid gap-4 grid-cols-4 transition-all duration-300 ${
+        className={`products_area h-screen grid gap-0 grid-cols-4 transition-all duration-300 ${
           isOpen ? "w-3/4 " : "w-full"
         } `}
       >
@@ -46,24 +47,24 @@ const CartMain = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1 }}
                   key={f.id}
-                  className="p-1"
+                  className="product-container p-4"
                 >
                   <strong className="product-name block py-2">{f.name}</strong>
-                  <div className="img_container overflow-hidden rounded-20 border border-b-4 border-r-4">
+                  <div className="img_container overflow-hidden  opacity-75 rounded-20 border border-b-4 border-r-4">
                     <img
                       src="/projests-picture/cart/lemon-dark-regular.svg"
                       alt={f.name}
-                      className="bg-yellow-100 p-4"
+                      className="bg-white p-4"
                     />
                   </div>
-                  <div className="flex items-center mt-2 relative  w-full grid grid-cols-3 ">
-                    <p className="pb-0 w-4/3 block col-span-2">
+                  <div className="flex items-center mt-2 relative  w-full grid grid-cols-8 ">
+                    <p className="pb-0 w-4/3 block col-span-6">
                       Price :{" "}
                       <strong className="text-red-500">${f.price}</strong>
                     </p>
                     <button
                       type="button"
-                      className="col-span-1"
+                      className="col-span-2"
                       onClick={() => {
                         dispatch({
                           type: "ADD_Item",
@@ -84,7 +85,7 @@ const CartMain = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1 }}
                   key={d.id}
-                  className="p-1"
+                  className="product-container p-4"
                 >
                   <strong className="product-name block py-2">{d.name}</strong>
                   <div className="img_container overflow-hidden rounded-20 border border-b-4 border-r-4">
@@ -94,14 +95,14 @@ const CartMain = () => {
                       className="bg-yellow-100 p-4"
                     />
                   </div>
-                  <div className="flex items-center mt-2 relative  w-full grid grid-cols-3 ">
-                    <p className="pb-0 w-4/3 block col-span-2">
+                  <div className="flex items-center mt-2 relative  w-full grid grid-cols-8 ">
+                    <p className="pb-0 w-4/3 block col-span-6">
                       Price :{" "}
                       <strong className="text-red-500">${d.price}</strong>
                     </p>
                     <button
                       type="button"
-                      className="col-span-1"
+                      className="col-span-2"
                       onClick={() => {
                         dispatch({
                           type: "ADD_Item",
