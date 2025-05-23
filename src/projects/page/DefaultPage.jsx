@@ -28,7 +28,7 @@ const DefaultPage = () => {
               />
             </div>
             <div className="flex items-center mt-2 relative  w-full grid grid-cols-8 ">
-              <p className="pb-0 w-4/3 block col-span-6">
+              <p className="pb-0 w-4/3 block col-span-5">
                 Price : <strong className="text-red-500">${all.price}</strong>
               </p>
               <button

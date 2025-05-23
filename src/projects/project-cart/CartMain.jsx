@@ -1,5 +1,13 @@
 import React, { useContext, useReducer, useState } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  useNavigate,
+  useParams,
+  useLocation,
+} from "react-router-dom";
 import { ThemeContext } from "./CartBodyArea.jsx";
 
 import ProductsPage from "../page/ProductsPage.jsx";
@@ -18,19 +26,22 @@ const CartMain = () => {
     console.log(name + "被點擊了!");
     setActive(name);
   };
+  const navigate = useNavigate();
+  const { id } = useParams();
+  const location = useLocation();
+
   return (
-    <div className="relative h-full p-12 w-3/4 m-auto">
-      <div className="products-body-bg"></div>
+    <div className="relative h-full p-12 w-3/4 m-auto {}`">
       {/* 商品切換區域 */}
 
       {/* Link */}
 
-      <nav className="grid grid-cols-8 gap-2">
+      <nav className={`grid grid-cols-6 gap-4 ${isOpen ? "w-3/4" : "w-full"}`}>
         <Link
           className={`link-point ${btnClass} ${
             active === "products" ? "bg-yellow-400 text-black" : ""
           }`}
-          to="/products"
+          to="/cart/products"
           onClick={() => handleClick("products")}
         >
           Products
@@ -39,7 +50,7 @@ const CartMain = () => {
           className={`link-point ${btnClass} ${
             active === "fruit" ? "bg-yellow-400 text-black" : ""
           }`}
-          to="/products/fruit"
+          to="/cart/products/fruit"
           onClick={() => handleClick("fruit")}
         >
           Fruit
@@ -48,7 +59,7 @@ const CartMain = () => {
           className={`link-point ${btnClass} ${
             active === "daily" ? "bg-yellow-400 text-black" : ""
           }`}
-          to="/products/daily"
+          to="/cart/products/daily"
           onClick={() => handleClick("daily")}
         >
           Daily
@@ -57,7 +68,7 @@ const CartMain = () => {
           className={`link-point ${btnClass}${
             active === "snack" ? "bg-yellow-400 text-black" : ""
           }`}
-          to="/products/snack"
+          to="/cart/products/snack"
           onClick={() => handleClick("snack")}
         >
           Snack
@@ -66,16 +77,24 @@ const CartMain = () => {
           className={`link-point ${btnClass} ${
             active === "divce" ? "bg-yellow-400 text-black" : ""
           }`}
-          to="/products/divce"
+          to="/cart/products/divce"
           onClick={() => handleClick("divce")}
         >
           Divce
         </Link>
+
+        <button
+          className="col-start-12 p-2"
+          onClick={() => navigate("/cart/products")}
+        >
+          HomePage
+        </button>
       </nav>
 
+      <p className="pt-2">Location : {location.pathname}</p>
       {/* 這邊需要有頁面轉換功能， */}
       <Routes>
-        <Route path="/products" element={<ProductsPage />}>
+        <Route path="/cart/products/" element={<ProductsPage />}>
           <Route index element={<DefaultPage />} />
           <Route path="fruit" element={<ProductFruit />} />
           <Route path="daily" element={<ProductDaily />} />
@@ -84,11 +103,11 @@ const CartMain = () => {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-      <div
+      {/* <div
         className={`products_area h-screen grid gap-0 grid-cols-4 transition-all duration-300 pt-4 ${
           isOpen ? "w-3/4 " : "w-full"
         } `}
-      ></div>
+      ></div> */}
     </div>
   );
 };

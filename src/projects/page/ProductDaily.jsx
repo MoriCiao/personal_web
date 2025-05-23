@@ -1,15 +1,17 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../project-cart/CartBodyArea";
 import { motion } from "framer-motion";
+import { useParams } from "react-router-dom";
 const ProductDaily = () => {
   const { isOpen, daily, dispatch } = useContext(ThemeContext);
-
+  const { id } = useParams();
   return (
     <div
       className={`products_area h-screen grid gap-0 grid-cols-4 transition-all duration-300 pt-4 ${
         isOpen ? "w-3/4 " : "w-full"
       } `}
     >
+      <p>目前頁面ID為：{id}</p>
       {daily.map((d) => {
         return (
           <motion.div
@@ -28,7 +30,7 @@ const ProductDaily = () => {
               />
             </div>
             <div className="flex items-center mt-2 relative  w-full grid grid-cols-8 ">
-              <p className="pb-0 w-4/3 block col-span-6">
+              <p className="pb-0 w-4/3 block col-span-5">
                 Price : <strong className="text-red-500">${d.price}</strong>
               </p>
               <button
