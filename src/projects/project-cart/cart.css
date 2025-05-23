@@ -49,11 +49,13 @@ body .top-img {
   width: 100%;
 }
 body .top-img img {
-  width: 80%;
-  height: 80%;
+  width: 75%;
+  height: 75%;
   border: 2px rgba(0, 0, 0, 0.3) solid;
   border-radius: 50%;
   box-shadow: inset 2px 2px 2px rgb(111, 111, 111);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body .search-area input, body .search-area button {
   background-color: gray;
@@ -107,9 +109,6 @@ body .light-area .bulb button {
   box-shadow: 2px 2px 5px gray, inset 2px 2px 2px white;
   margin: 0.5rem;
 }
-body .btn-active {
-  background-color: rgb(255, 191, 167);
-}
 body .img_container {
   border-radius: 20px;
 }
@@ -133,4 +132,12 @@ body .product-container {
 }
 body .product-container:hover {
   background-color: rgba(252, 202, 121, 0.5);
+}
+body .link-point {
+  font-weight: 900;
+  transition: all 0.3s ease;
+}
+body .link-point:hover {
+  background-color: gold;
+  color: black;
 }/*# sourceMappingURL=cart.css.map */
