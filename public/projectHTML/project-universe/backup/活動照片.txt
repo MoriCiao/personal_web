@@ -1,0 +1,131 @@
+<div class="container-fluid text-center pe-0 mx-0">
+        <h1 class="my-3">活動照片</h1>
+        <div class="row m-auto ">
+            <div class="col col-12 d-flex flex-wrap justify-content-start justify-content-md-center"  style="padding: 0;">
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4" style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./pictrue/classPhoto/Photo-1/SaveClip.App_482985322_122140030892547020_7334263047007277758_n.jpg"
+                            alt="" class="classPhoto" style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+                        
+                    </div>
+                    <h4 style="margin-top: 15px;">✨閃亮亮的海洋寶石✨</h4>
+                    <p style="padding-right: 20px;">在潮間帶能夠看到很多不同的貝殼，其中有一種形狀比較特別，它的殼形呈橢圓型，腹部則有一條縫狀開口，它就是--【寶螺】
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4" style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./pictrue/classPhoto/Photo-2/SaveClip.App_489534776_122145904142547020_1060968090467589988_n.jpg"
+                            alt="" class="classPhoto" style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+                        
+                    </div>
+                    <h4 style="margin-top: 15px;">🐍緬甸蟒--麵茶🐍</h4>
+                    <p style="padding-right: 20px;">緬甸蟒沒有毒，它不會咬人，而是用超強的身體把食物緊緊纏住，就像「超級蛇抱抱」，讓獵物動不了。然後牠會一口把整個食物吞下去，超厲害！
+
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./pictrue/classPhoto/Photo-3/SaveClip.App_486480484_122142692978547020_6422349113381061112_n.jpg"
+                            alt="" class="classPhoto" style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+
+                    </div>
+                    <h4 style="margin-top: 15px;">🌟不太亮的螢火蟲🌟</h4>
+                    <p style="padding-right: 20px;">說到螢火蟲，你腦中第一個浮現的畫面是甚麼呢?
+                    我相信應該都是一閃一閃的樣子吧! <br>
+
+                    今天要跟你分享很難得看見的螢火蟲--鹿野氏黑脈螢
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./pictrue/classPhoto/Photo-4/SaveClip.App_482960063_122140631216547020_5832583783581530564_n.jpg"
+                            alt="" class="classPhoto" style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+                        
+                    </div>
+                    <h4 style="margin-top: 15px;">🚢海上奇遇記🚢</h4>
+                    <p style="padding-right: 20px;">龜山島不只有火山島景色，周邊也是台灣賞鯨豚熱點之一，能近距離欣賞野生海豚，也有機會與海豚並肩航行哦！
+
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./pictrue/classPhoto/Photo-5/SaveClip.App_482976896_122140425734547020_8298765068360585430_n.jpg"
+                            alt="" class="classPhoto" style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+
+                    </div>
+                    <h4 style="margin-top: 15px;">🐢湧泉之龜-龜山島🐢</h4>
+                    <p style="padding-right: 20px;">龜山島是台灣唯一的活火山島，島上有硫氣孔、溫泉和鐘乳石洞等特殊地質景觀。401高地是這座島的最高點，可以俯瞰整座島嶼，還能看到奇形怪狀的火山岩!
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./pictrue/classPhoto/Photo-6/SaveClip.App_481279524_122137155218547020_1140348250917077597_n.jpg"
+                            alt="" class="classPhoto" style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+
+                    </div>
+                    <h4 style="margin-top: 15px;">在城市裡的泉水源頭</h4>
+                    <p style="padding-right: 20px;">看到水源，就會覺得是在深山野嶺裡。但你知道嗎，原來在台北的公園裡就有一個源頭!!
+
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./pictrue/classPhoto/Photo-7/SaveClip.App_481243946_122137259996547020_4554877174248934407_n.jpg"
+                            alt="" class="classPhoto" style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+                        
+                    </div>
+                    <h4 style="margin-top: 15px;">元老寵物--菜脯</h4>
+                    <p style="padding-right: 20px;">牠是一隻愛水的綠水龍，雖然已經年紀大了，不再下蛋、行動也比較緩慢，但每次泡完水，還是會散發出翡翠綠的美麗色澤。
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./pictrue/classPhoto/Photo-8/SaveClip.App_481166121_122138332460547020_2862258403541543311_n.jpg"
+                            alt="" class="classPhoto" style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+
+                    </div>
+                    <h4 style="margin-top: 15px;">白斑鳩--包子</h4>
+                    <p style="padding-right: 20px;">包子是個溫柔的小姑娘，看到人不會害怕，比較容易跟她有互動。當她停在杆子上休息的時候，會縮成一團，毛茸茸的樣子超可愛~~
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./pictrue/classPhoto/Photo-9/SaveClip.App_481229879_122138721506547020_6401600294076166444_n.jpg"
+                            alt="" class="classPhoto" style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+                    </div>
+                    <h4 style="margin-top: 15px;">跳躍高手--台灣大蝗</h4>
+                    <p style="padding-right: 20px;">它的身體又長又壯，顏色可以完美融入草叢，保護自己不被天敵發現。它的頭部尖尖的，觸角比身體短，頭部摸起來硬硬的。
+
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+
+
+
+            </div>
+            
+        </div>
+    </div>

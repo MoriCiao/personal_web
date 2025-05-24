@@ -9,9 +9,9 @@ const CartHeader = () => {
   }, 0);
 
   return (
-    <div className="header h-full w-full relative">
+    <div className="cart-header h-full w-full relative">
       <button
-        className="fixed bottom-4 right-4 rounded-md z-50"
+        className="cartBtn fixed bottom-4 right-4 rounded-md z-50"
         onClick={toggleCart}
       >
         {isOpen ? "Close Cart" : "Open Cart"}
@@ -34,17 +34,13 @@ const CartHeader = () => {
                   return (
                     <div
                       key={item.id}
-                      className="cart-item rounded-md px-4 py-2 my-2"
+                      className="cart-item rounded-md px-2 py-2 my-2"
                     >
-                      <div className="grid grid-cols-4">
-                        <div className="col-1">
-                          <img
-                            className="cartItemIcon"
-                            src="/projests-picture/cart/basket-shopping-dark-solid.svg"
-                            alt="購物車物品小圖示.."
-                          />
+                      <div className="grid grid-cols-6 gap-1">
+                        <div className="col-start-1 col-span-2 text-[4rem]">
+                          <h1>📦</h1>
                         </div>
-                        <div className="pl-2 col-span-3">
+                        <div className="col-start-3 col-span-4">
                           <p>{item.name}</p>
                           <p>
                             單價：{item.price} , 數量：{item.quantity}

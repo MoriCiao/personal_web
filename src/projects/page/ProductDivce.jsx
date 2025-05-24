@@ -23,11 +23,7 @@ const ProductDivce = () => {
           >
             <strong className="product-name block py-2">{d.name}</strong>
             <div className="img_container overflow-hidden  opacity-75 rounded-20">
-              <img
-                src="/projests-picture/cart/photo-film-solid.svg"
-                alt={d.name}
-                className="p-4"
-              />
+              <span className=" text-[9rem]">{d.img}</span>
             </div>
             <div className="flex items-center mt-2 relative  w-full grid grid-cols-8 ">
               <p className="pb-0 w-4/3 block col-span-5">

@@ -9,7 +9,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import { ThemeContext } from "./CartBodyArea.jsx";
-
+import { motion } from "framer-motion";
 import ProductsPage from "../page/ProductsPage.jsx";
 import DefaultPage from "../page/DefaultPage.jsx";
 import ProductFruit from "../page/ProductFruit.jsx";
@@ -18,30 +18,36 @@ import ProductSnack from "../page/ProductSnack.jsx";
 import ProductDivce from "../page/ProductDivce.jsx";
 import NotFound from "../page/NotFound.jsx";
 const CartMain = () => {
-  const { isOpen, fruit, daily, dispatch, result, item, setItem, handleItems } =
+  const { isOpen, result, setResult, isSearch, dispatch } =
     useContext(ThemeContext);
   const btnClass = "text-center border py-2 bg-gray-500 text-white rounded-md";
   const [active, setActive] = useState("");
   const handleClick = (name) => {
+    setResult([]);
+    isSearch(false);
     console.log(name + "被點擊了!");
     setActive(name);
+    console.log(result);
   };
-  const navigate = useNavigate();
-  const { id } = useParams();
   const location = useLocation();
 
+  // 如果搜尋觸發後 回傳搜尋結果
+  // 無相同商品則回傳 無相符商品
+  // 沒有觸發則是一般頁面
+
   return (
-    <div className="relative h-full p-12 w-3/4 m-auto {}`">
+    <div
+      className={`transition-all duration-300 p-12 m-auto w-3/4
+        `}
+    >
       {/* 商品切換區域 */}
-
       {/* Link */}
-
-      <nav className={`grid grid-cols-6 gap-4 ${isOpen ? "w-3/4" : "w-full"}`}>
+      <motion.nav className={`grid grid-cols-6 gap-4 w-full`}>
         <Link
           className={`link-point ${btnClass} ${
             active === "products" ? "bg-yellow-400 text-black" : ""
           }`}
-          to="/cart/products"
+          to="/projects/project-cart/cart/products"
           onClick={() => handleClick("products")}
         >
           Products
@@ -50,7 +56,7 @@ const CartMain = () => {
           className={`link-point ${btnClass} ${
             active === "fruit" ? "bg-yellow-400 text-black" : ""
           }`}
-          to="/cart/products/fruit"
+          to="/projects/project-cart/cart/products/fruit"
           onClick={() => handleClick("fruit")}
         >
           Fruit
@@ -59,7 +65,7 @@ const CartMain = () => {
           className={`link-point ${btnClass} ${
             active === "daily" ? "bg-yellow-400 text-black" : ""
           }`}
-          to="/cart/products/daily"
+          to="/projects/project-cart/cart/products/daily"
           onClick={() => handleClick("daily")}
         >
           Daily
@@ -68,7 +74,7 @@ const CartMain = () => {
           className={`link-point ${btnClass}${
             active === "snack" ? "bg-yellow-400 text-black" : ""
           }`}
-          to="/cart/products/snack"
+          to="/projects/project-cart/cart/products/snack"
           onClick={() => handleClick("snack")}
         >
           Snack
@@ -77,37 +83,71 @@ const CartMain = () => {
           className={`link-point ${btnClass} ${
             active === "divce" ? "bg-yellow-400 text-black" : ""
           }`}
-          to="/cart/products/divce"
+          to="/projects/project-cart/cart/products/divce"
           onClick={() => handleClick("divce")}
         >
           Divce
         </Link>
-
-        <button
-          className="col-start-12 p-2"
-          onClick={() => navigate("/cart/products")}
-        >
-          HomePage
-        </button>
-      </nav>
-
-      <p className="pt-2">Location : {location.pathname}</p>
-      {/* 這邊需要有頁面轉換功能， */}
-      <Routes>
-        <Route path="/cart/products/" element={<ProductsPage />}>
-          <Route index element={<DefaultPage />} />
-          <Route path="fruit" element={<ProductFruit />} />
-          <Route path="daily" element={<ProductDaily />} />
-          <Route path="snack" element={<ProductSnack />} />
-          <Route path="divce" element={<ProductDivce />} />
-          <Route path="*" element={<NotFound />} />
-        </Route>
-      </Routes>
-      {/* <div
-        className={`products_area h-screen grid gap-0 grid-cols-4 transition-all duration-300 pt-4 ${
-          isOpen ? "w-3/4 " : "w-full"
-        } `}
-      ></div> */}
+      </motion.nav>
+      {isSearch ? (
+        <div className="relative h-full  w-full m-auto">
+          <div
+            className={`products_area h-screen grid gap-0 grid-cols-4 transition-all duration-300 pt-4 ${
+              isOpen ? "w-3/4 " : "w-full"
+            } `}
+          >
+            {result.map((r) => {
+              return (
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                  key={r.id}
+                  className="product-container p-4"
+                >
+                  <strong className="product-name block py-2">{r.name}</strong>
+                  <div className="img_container overflow-hidden  opacity-75 rounded-20">
+                    <span className=" text-[9rem]">{r.img}</span>
+                  </div>
+                  <div className="flex items-center mt-2 relative  w-full grid grid-cols-8 ">
+                    <p className="pb-0 w-4/3 block col-span-5">
+                      Price :{" "}
+                      <strong className="text-red-500">${r.price}</strong>
+                    </p>
+                    <button
+                      type="button"
+                      className="col-span-3"
+                      onClick={() => {
+                        dispatch({
+                          type: "ADD_Item",
+                          payload: { id: r.id, name: r.name, price: r.price },
+                        });
+                      }}
+                    >
+                      <span>Add</span>
+                    </button>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      ) : (
+        <div className="relative h-full  w-full m-auto `">
+          <p className="pt-2">Location : {location.pathname}</p>
+          {/* 這邊需要有頁面轉換功能， */}
+          <Routes>
+            <Route path="products" element={<ProductsPage />}>
+              <Route index element={<DefaultPage />} />
+              <Route path="fruit" element={<ProductFruit />} />
+              <Route path="daily" element={<ProductDaily />} />
+              <Route path="snack" element={<ProductSnack />} />
+              <Route path="divce" element={<ProductDivce />} />
+              <Route path="*" element={<NotFound />} />
+            </Route>
+          </Routes>
+        </div>
+      )}
     </div>
   );
 };

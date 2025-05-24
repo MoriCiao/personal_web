@@ -23,11 +23,7 @@ const ProductSnack = () => {
           >
             <strong className="product-name block py-2">{s.name}</strong>
             <div className="img_container overflow-hidden  opacity-75 rounded-20">
-              <img
-                src="/projests-picture/cart/cookie-bite-solid.svg"
-                alt={s.name}
-                className="p-4"
-              />
+              <span className=" text-[9rem]">{s.img}</span>
             </div>
             <div className="flex items-center mt-2 relative  w-full grid grid-cols-8 ">
               <p className="pb-0 w-4/3 block col-span-5">

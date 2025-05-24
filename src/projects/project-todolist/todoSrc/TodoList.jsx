@@ -196,7 +196,7 @@ const TodoList = () => {
                       }}
                     >
                       <img
-                        src="./public/trash-solid.svg"
+                        src="../../src/projects/project-todolist/public/trash-solid.svg"
                         alt="trash"
                         className="trash"
                       />

@@ -3,7 +3,7 @@ import Bg_blur from "./Bg_blur";
 import Header from "./Header";
 import MainArea from "./MainArea";
 import Footer from "./Footer";
-
+import "./index.css";
 const App = () => {
   return (
     <div className="space">

@@ -31,6 +31,7 @@ const CartTopArea = () => {
     transition: { duration: 8, repeat: Infinity, repeatType: "loop" },
   };
   //
+
   useEffect(() => {
     inputRef.current.focus();
   }, []);

@@ -1,0 +1,184 @@
+<div class="container-fluid text-center pe-0 mx-0">
+        <h1 class="my-3">Exploring Photo</h1>
+        <div class="row m-auto ">
+            <div class="col col-12 d-flex flex-wrap justify-content-start justify-content-md-center" style="padding: 0;">
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./reMakePicture/image-solid.svg"
+                            alt="" class="classPhoto"
+                            style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+    
+                    </div>
+                    <h4 style="margin-top: 15px;">✨Photo✨</h4>
+                    <p style="padding-right: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem odio, facilis rem cumque iure provident tempore temporibus laudantium impedit sit.
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./reMakePicture/image-solid.svg" alt="" class="classPhoto"
+                            style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+                
+                    </div>
+                    <h4 style="margin-top: 15px;">✨Photo✨</h4>
+                    <p style="padding-right: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem odio, facilis rem
+                        cumque iure provident tempore temporibus laudantium impedit sit.
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./reMakePicture/image-solid.svg" alt="" class="classPhoto"
+                            style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+                
+                    </div>
+                    <h4 style="margin-top: 15px;">✨Photo✨</h4>
+                    <p style="padding-right: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem odio, facilis rem
+                        cumque iure provident tempore temporibus laudantium impedit sit.
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./reMakePicture/image-solid.svg" alt="" class="classPhoto"
+                            style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+                
+                    </div>
+                    <h4 style="margin-top: 15px;">✨Photo✨</h4>
+                    <p style="padding-right: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem odio, facilis rem
+                        cumque iure provident tempore temporibus laudantium impedit sit.
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./reMakePicture/image-solid.svg" alt="" class="classPhoto"
+                            style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+                
+                    </div>
+                    <h4 style="margin-top: 15px;">✨Photo✨</h4>
+                    <p style="padding-right: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem odio, facilis rem
+                        cumque iure provident tempore temporibus laudantium impedit sit.
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./reMakePicture/image-solid.svg" alt="" class="classPhoto"
+                            style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+                
+                    </div>
+                    <h4 style="margin-top: 15px;">✨Photo✨</h4>
+                    <p style="padding-right: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem odio, facilis rem
+                        cumque iure provident tempore temporibus laudantium impedit sit.
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./reMakePicture/image-solid.svg" alt="" class="classPhoto"
+                            style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+                
+                    </div>
+                    <h4 style="margin-top: 15px;">✨Photo✨</h4>
+                    <p style="padding-right: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem odio, facilis rem
+                        cumque iure provident tempore temporibus laudantium impedit sit.
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./reMakePicture/image-solid.svg" alt="" class="classPhoto"
+                            style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+                
+                    </div>
+                    <h4 style="margin-top: 15px;">✨Photo✨</h4>
+                    <p style="padding-right: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem odio, facilis rem
+                        cumque iure provident tempore temporibus laudantium impedit sit.
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./reMakePicture/image-solid.svg" alt="" class="classPhoto"
+                            style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+                
+                    </div>
+                    <h4 style="margin-top: 15px;">✨Photo✨</h4>
+                    <p style="padding-right: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem odio, facilis rem
+                        cumque iure provident tempore temporibus laudantium impedit sit.
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./reMakePicture/image-solid.svg" alt="" class="classPhoto"
+                            style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+                
+                    </div>
+                    <h4 style="margin-top: 15px;">✨Photo✨</h4>
+                    <p style="padding-right: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem odio, facilis rem
+                        cumque iure provident tempore temporibus laudantium impedit sit.
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./reMakePicture/image-solid.svg" alt="" class="classPhoto"
+                            style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+                
+                    </div>
+                    <h4 style="margin-top: 15px;">✨Photo✨</h4>
+                    <p style="padding-right: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem odio, facilis rem
+                        cumque iure provident tempore temporibus laudantium impedit sit.
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./reMakePicture/image-solid.svg" alt="" class="classPhoto"
+                            style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+                
+                    </div>
+                    <h4 style="margin-top: 15px;">✨Photo✨</h4>
+                    <p style="padding-right: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem odio, facilis rem
+                        cumque iure provident tempore temporibus laudantium impedit sit.
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+                <div class="photo_item col col-xl-3 col-md-4 col-sm-12 text-start mx-md-4"
+                    style="position: relative; z-index: 0; margin: 0 5px 5px; max-width: 300px;">
+                    <div>
+                        <img src="./reMakePicture/image-solid.svg" alt="" class="classPhoto"
+                            style="width: 100%; border-radius: 10px; position: relative; z-index: 0;">
+                
+                    </div>
+                    <h4 style="margin-top: 15px;">✨Photo✨</h4>
+                    <p style="padding-right: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem odio, facilis rem
+                        cumque iure provident tempore temporibus laudantium impedit sit.
+                    </p>
+                </div>
+                <!-- 下一個Photo Item -->
+                 
+    
+                
+    
+    
+    
+            </div>
+    
+        </div>
+    
+    </div>

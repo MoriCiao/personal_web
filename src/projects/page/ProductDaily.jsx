@@ -11,7 +11,6 @@ const ProductDaily = () => {
         isOpen ? "w-3/4 " : "w-full"
       } `}
     >
-      <p>目前頁面ID為：{id}</p>
       {daily.map((d) => {
         return (
           <motion.div
@@ -22,12 +21,8 @@ const ProductDaily = () => {
             className="product-container p-4"
           >
             <strong className="product-name block py-2">{d.name}</strong>
-            <div className="img_container overflow-hidden rounded-20">
-              <img
-                src="/projests-picture/cart/box-tissue-dark-solid.svg"
-                alt={d.name}
-                className="p-4"
-              />
+            <div className="img_container overflow-hidden  opacity-75 rounded-20">
+              <span className=" text-[9rem]">{d.img}</span>
             </div>
             <div className="flex items-center mt-2 relative  w-full grid grid-cols-8 ">
               <p className="pb-0 w-4/3 block col-span-5">
