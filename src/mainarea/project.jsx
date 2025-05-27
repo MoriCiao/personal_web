@@ -4,58 +4,50 @@ import CartBodyArea from "../projects/project-cart/CartBodyArea.jsx";
 
 function Project() {
   console.log("Project render ...");
-  const projects = [
+
+  const projectsLink = [
     {
-      a_tag: "/public/projectHTML/project-universe/universe.html",
+      a_tag: "/projects/project-universe",
       name: "宇宙教學網站",
       p: "此專案為一個範例網站，利用Bootstrap 及 RWD排版。",
       img: "/public/projests-picture/nature/forest.jpg",
       state: "Done",
     },
     {
-      a_tag: "#",
-      name: "Hana Portfolio",
-      p: "協助製作友人的Portfolio。",
-      img: "/public/projests-picture/hana/1747461275694.jpg",
-      state: "施工中...",
-    },
-    {
-      a_tag: "/public/projectHTML/calculator.html",
+      a_tag: "/projects/project-calculator",
       name: "Simple Calculator",
       p: "JS製作的簡易的計算機",
       img: "/public/projests-picture/calculator/1747460931846.jpg",
       state: "施工中...",
     },
     {
-      a_tag: "/public/projectHTML/TodoList.html",
+      a_tag: "/projects/project-todolist",
       name: "To DO List",
       p: "用 React 製作一個備忘錄。",
       img: "/public/projests-picture/todo/note.jpg",
       state: "Done",
     },
     {
-      a_tag: "/public/projectHTML/search.html",
+      a_tag: "/projects/project-search/",
       name: "Search Image",
       p: "輸入API Key，搜尋圖片",
       img: "/public/projests-picture/search/S__48201744.jpg",
       state: "Done",
     },
-    {
-      a_tag: "/public/projectHTML/cart.html",
-      name: "Cart",
-      p: "",
-      img: "/public/projests-picture/cart/1747462770596.jpg",
-      state: "施工中...",
-    },
-  ];
 
-  const projectsLink = [
     {
-      a_tag: "./projects/project-cart/CartBodyArea.jsx",
+      a_tag: "/projects/project-cart/cart",
       name: "Cart",
       p: "此專案為一個範例網站，利用Bootstrap 及 RWD排版。",
-      img: "/public/projests-picture/nature/forest.jpg",
+      img: "/public/projests-picture/cart/cartImg.jpg",
       state: "Done",
+    },
+    {
+      a_tag: "/projects/project-Hana_Portfolio/",
+      name: "Hana Portfolio",
+      p: "協助製作友人的Portfolio。",
+      img: "/public/projests-picture/hana/1747461275694.jpg",
+      state: "施工中...",
     },
   ];
   return (
@@ -63,7 +55,7 @@ function Project() {
       {/* 這邊是 LINK */}
       {projectsLink.map((pLink, index) => {
         return (
-          <Link to="/projects/project-cart/cart" key={pLink.index}>
+          <Link to={pLink.a_tag} key={index}>
             <div className="img-container">
               <img src={pLink.img} alt="" className="project-img" />
             </div>

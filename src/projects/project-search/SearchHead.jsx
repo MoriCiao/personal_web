@@ -20,7 +20,7 @@ const SearchHead = ({ inputValue, handleChange, search }) => {
     <div className="header-area">
       <div>
         <div className="bg-img"></div>
-        <h1>
+        <h1 className="text-[2.5rem] mb-4">
           歡迎免費 <br />
           搜尋圖片
         </h1>

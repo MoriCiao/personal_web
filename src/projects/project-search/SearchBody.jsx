@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
+import "./search.css";
 import axios from "axios";
 import SearchHead from "./SearchHead";
-
 import SearchPhoto from "./SearchPhoto";
 const SearchBody = () => {
   const [data, setData] = useState(null);
