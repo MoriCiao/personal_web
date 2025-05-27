@@ -3,9 +3,12 @@ import React, { useEffect, useRef, useState } from "react";
 import Timer from "./timer";
 
 const Header = () => {
+  console.log("Header render ....");
   // 新增旅客，當Name 被輸入時，上方名稱會自動修正。
   const [name, setName] = useState("");
   const HandleChangeName = (e) => {
+    console.log("HandleChangeName render ...");
+
     setName(e.target.value);
     console.log(`使用者在input輸入 ${e.target.value}`);
   };
@@ -21,7 +24,7 @@ const Header = () => {
       <div>
         <section className="info-area">
           <div className="info">
-            <h1>
+            <h1 className="text-[2rem]">
               Hi <span className="useState-area">{name || "Stranger"}</span>，
               I'm <br />
               <strong>Rosen</strong>
@@ -69,6 +72,7 @@ const Header = () => {
                 type="text"
                 placeholder="Your name or Business units"
                 ref={inputElement}
+                // 對應
                 onChange={HandleChangeName}
               />
               <label htmlFor="">Email</label>

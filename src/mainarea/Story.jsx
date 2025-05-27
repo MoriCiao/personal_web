@@ -1,9 +1,10 @@
 import React from "react";
 
 const Story = () => {
+  console.log("Story render ...");
   return (
     <section id="story" className="story">
-      <h1>Story</h1>
+      <h1 className="text-[2rem]">Story</h1>
       <p>
         學習前端的初衷是在目前公司，經常使用
         <strong style={{ color: "rgb(255, 177, 27)" }}> Excel </strong>

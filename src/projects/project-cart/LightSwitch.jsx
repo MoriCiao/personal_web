@@ -1,19 +1,10 @@
 import React, { useContext, useEffect, useReducer, useState } from "react";
-import { ThemeContext } from "./CartBodyArea";
+
+export const initailState = { isOn: false };
 
 const Light = () => {
-  const { theme, setTheme } = useContext(ThemeContext);
-  // console.log(theme); // deBug確認Provider有連動
-  // const [lighting, setLight] = useState(false);
-  // if (lighting) {
-  //   setTheme("bulb-light");
-  //   setLight(false);
-  // } else {
-  //   setTheme("bulb-dark");
-  //   setLight(true);
-  // }
-
-  const initailState = { isOn: false };
+  const [theme, setTheme] = useState("bulb-dark");
+  console.log("Light render ...");
 
   const lightReducer = (state, action) => {
     switch (action.type) {
@@ -27,15 +18,22 @@ const Light = () => {
         throw new Error();
     }
   };
+
   function LightSwith() {
     const [lightState, dispatch] = useReducer(lightReducer, initailState);
     // 當燈泡開啟 body的主題要變換
+
     useEffect(() => {
-      if (lightState.isOn) {
-        setTheme("bulb-light");
-      } else {
-        setTheme("bulb-dark");
-      }
+      const cartBody = document.querySelector(".cart-body");
+      cartBody.classList.remove("chagneB", "chagneC");
+      // if (lightState.isOn) {
+      //
+      //   cartBody.classList.add("changeB");
+      // } else {
+      //
+      //   cartBody.classList.add("changeC");
+      // }
+      console.log("useEffect render ...");
     }, [theme]);
     return (
       <div className="bulb">

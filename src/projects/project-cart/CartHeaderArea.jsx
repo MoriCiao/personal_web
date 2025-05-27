@@ -1,7 +1,8 @@
-import React, { useReducer, useState, useContext } from "react";
+import React, { useReducer, useState, useContext, memo } from "react";
 
 import { ThemeContext } from "./CartBodyArea.jsx";
 const CartHeader = () => {
+  console.log("CartHeader render ...");
   const { isOpen, toggleCart, cartItem, dispatch } = useContext(ThemeContext);
 
   const totlePrice = cartItem.reduce((acc, item) => {
@@ -11,6 +12,7 @@ const CartHeader = () => {
   return (
     <div className="cart-header h-full w-full relative">
       <button
+        type="button"
         className="cartBtn fixed bottom-4 right-4 rounded-md z-50"
         onClick={toggleCart}
       >

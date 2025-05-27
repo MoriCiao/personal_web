@@ -1,10 +1,11 @@
 import React from "react";
 
 const Work = () => {
+  console.log("Work render ...");
   return (
     <section id="work">
       <div className="work">
-        <h1>Work Experience</h1>
+        <h1 className="text-[2rem]">Work Experience</h1>
         <p className="fs-5">
           <i className="bi bi-caret-right"> </i>海龜舊傷助理：2017/ 02 ~ 2017/
           08

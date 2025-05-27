@@ -5,6 +5,7 @@ import Skills from "./mainarea/Skills";
 import Projects from "./mainarea/Projects";
 
 const MainArea = () => {
+  console.log("MainArea render ...");
   return (
     <main className="">
       <hr className="d-md-none" />

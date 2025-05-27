@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+.changeC {
+  background: #f36161;
+}
+
+.changeB {
+  background: #fff78d;
+}
+
 .cart-body {
   overflow-y: overlay;
   scrollbar-width: none;

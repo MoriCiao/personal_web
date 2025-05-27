@@ -17,23 +17,32 @@ import ProductDaily from "../page/ProductDaily.jsx";
 import ProductSnack from "../page/ProductSnack.jsx";
 import ProductDivce from "../page/ProductDivce.jsx";
 import NotFound from "../page/NotFound.jsx";
+
+export const btnClass =
+  "text-center border py-2 bg-gray-500 text-white rounded-md";
+
 const CartMain = () => {
-  const { isOpen, result, setResult, isSearch, dispatch } =
+  console.log("CartMain render ...");
+  const { isOpen, result, setResult, isSearch, setIsSearch, dispatch } =
     useContext(ThemeContext);
-  const btnClass = "text-center border py-2 bg-gray-500 text-white rounded-md";
+
   const [active, setActive] = useState("");
+
   const handleClick = (name) => {
+    console.log("handleClick render ...");
     setResult([]);
-    isSearch(false);
+    console.log(isSearch);
     console.log(name + "被點擊了!");
     setActive(name);
     console.log(result);
+    setTimeout(() => {
+      setIsSearch(false);
+      console.log(isSearch);
+    }, 150);
   };
-  const location = useLocation();
+  //搜尋後無法切換商品
 
-  // 如果搜尋觸發後 回傳搜尋結果
-  // 無相同商品則回傳 無相符商品
-  // 沒有觸發則是一般頁面
+  const location = useLocation();
 
   return (
     <div
@@ -72,7 +81,7 @@ const CartMain = () => {
         </Link>
         <Link
           className={`link-point ${btnClass}${
-            active === "snack" ? "bg-yellow-400 text-black" : ""
+            active === "snack" ? " bg-yellow-400 text-black" : ""
           }`}
           to="/projects/project-cart/cart/products/snack"
           onClick={() => handleClick("snack")}

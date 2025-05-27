@@ -1,12 +1,12 @@
 import React from "react";
-import Skill from "./Skills";
 
 function SkillList() {
+  console.log("SkillList render ...");
   const skills = [
     { name: "HTML", level: 70 },
-    { name: "CSS", level: 50 },
+    { name: "CSS", level: 55 },
     { name: "JavaScript", level: 30 },
-    { name: "React", level: 30 },
+    { name: "React", level: 40 },
   ];
   return (
     <div className="skill">

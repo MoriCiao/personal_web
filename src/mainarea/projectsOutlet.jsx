@@ -3,6 +3,8 @@ import { Outlet, Route, Routes } from "react-router-dom";
 import CartBody from "../projects/project-cart/CartBodyArea";
 
 const ProjectsOutlet = () => {
+  console.log("ProjectsOutlet  render ...");
+
   return (
     <div className="outlet-project">
       {/* 這邊要可以導向所有的 Project */}

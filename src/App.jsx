@@ -5,6 +5,7 @@ import MainArea from "./MainArea";
 import Footer from "./Footer";
 import "./index.css";
 const App = () => {
+  console.log("App render ...");
   return (
     <div className="space">
       <Bg_blur />

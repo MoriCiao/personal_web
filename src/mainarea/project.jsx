@@ -3,6 +3,7 @@ import { Link, Route, Routes } from "react-router-dom";
 import CartBodyArea from "../projects/project-cart/CartBodyArea.jsx";
 
 function Project() {
+  console.log("Project render ...");
   const projects = [
     {
       a_tag: "/public/projectHTML/project-universe/universe.html",
