@@ -43,6 +43,13 @@ function Project() {
       state: "Done",
     },
     {
+      a_tag: "/projects/project-objectForm",
+      name: "小型資料管理",
+      p: "小型資料管理。",
+      img: "/public/project-objectFrom/icon-objectForm.jpg",
+      state: "施工中...",
+    },
+    {
       a_tag: "/projects/project-Hana_Portfolio/",
       name: "Hana Portfolio",
       p: "協助製作友人的Portfolio。",

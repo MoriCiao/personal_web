@@ -7,6 +7,7 @@ import SearchBody from "./projects/project-search/SearchBody.jsx";
 import StaticPageUniverse from "./projects/StaticPage-universe.jsx";
 import StaticPageTodoList from "./projects/StaticPage-todoList.jsx";
 import StaticPageCalculator from "./projects/StaticPage-calculator.jsx";
+import ObejectForm from "./projects/project-from/ObejectFrom.jsx";
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Routes>
@@ -25,6 +26,7 @@ createRoot(document.getElementById("root")).render(
       />
       <Route path="/projects/project-search/" element={<SearchBody />} />
       <Route path="/projects/project-cart/cart/*" element={<CartBody />} />
+      <Route path="/projects/project-objectForm" element={<ObejectForm />} />
     </Routes>
   </BrowserRouter>
 );
