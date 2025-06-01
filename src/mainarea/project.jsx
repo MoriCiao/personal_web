@@ -43,8 +43,8 @@ function Project() {
       state: "Done",
     },
     {
-      a_tag: "/projects/project-objectForm",
-      name: "小型資料管理",
+      a_tag: "/projects/project-form",
+      name: "小型資料管理 II",
       p: "小型資料管理。",
       img: "/public/project-objectFrom/icon-objectForm.jpg",
       state: "施工中...",
@@ -66,29 +66,14 @@ function Project() {
             <div className="img-container">
               <img src={pLink.img} alt="" className="project-img" />
             </div>
-            <div className="description">
-              <h4>{pLink.name}</h4>
-              <p>{pLink.p}</p>
-              <p className="state">{pLink.state}</p>
+            <div className="description mt-2">
+              <h4 className="text-[1.25rem]">{pLink.name}</h4>
+              <p className="mt-1">{pLink.p}</p>
+              <p className="state mt-1">{pLink.state}</p>
             </div>
           </Link>
         );
       })}
-      {/* ------------------------------ */}
-      {/* {projects.map((project, index) => (
-        <React.Fragment key={index}>
-          <a href={project.a_tag} className="project" target="_blank">
-            <div className="img-container">
-              <img src={project.img} alt="" className="project-img" />
-            </div>
-            <div className="description">
-              <h4>{project.name}</h4>
-              <p>{project.p}</p>
-              <p className="state">{project.state}</p>
-            </div>
-          </a>
-        </React.Fragment>
-      ))} */}
     </div>
   );
 }

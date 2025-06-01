@@ -1,0 +1,702 @@
+[
+  {
+    "id": 0,
+    "name": "Item 560",
+    "Specifications": "Waterproof",
+    "Price": "$455.15",
+    "Date of manufacture": "2024-07-29"
+  },
+  {
+    "id": 1,
+    "name": "Widget 363",
+    "Specifications": "Waterproof",
+    "Price": "$593.14",
+    "Date of manufacture": "2022-06-12"
+  },
+  {
+    "id": 2,
+    "name": "Widget 199",
+    "Specifications": "Compact",
+    "Price": "$830.78",
+    "Date of manufacture": "2025-02-13"
+  },
+  {
+    "id": 3,
+    "name": "Item 853",
+    "Specifications": "Compact",
+    "Price": "$806.67",
+    "Date of manufacture": "2021-04-24"
+  },
+  {
+    "id": 4,
+    "name": "Widget 131",
+    "Specifications": "Compact",
+    "Price": "$777.54",
+    "Date of manufacture": "2024-06-09"
+  },
+  {
+    "id": 5,
+    "name": "Device 957",
+    "Specifications": "Eco-friendly",
+    "Price": "$694.55",
+    "Date of manufacture": "2022-10-07"
+  },
+  {
+    "id": 6,
+    "name": "Widget 829",
+    "Specifications": "High performance",
+    "Price": "$740.45",
+    "Date of manufacture": "2020-11-14"
+  },
+  {
+    "id": 7,
+    "name": "Item 751",
+    "Specifications": "Compact",
+    "Price": "$872.59",
+    "Date of manufacture": "2022-12-21"
+  },
+  {
+    "id": 8,
+    "name": "Thing 303",
+    "Specifications": "Compact",
+    "Price": "$634.28",
+    "Date of manufacture": "2024-05-30"
+  },
+  {
+    "id": 9,
+    "name": "Widget 968",
+    "Specifications": "Compact",
+    "Price": "$654.77",
+    "Date of manufacture": "2020-06-22"
+  },
+  {
+    "id": 10,
+    "name": "Widget 219",
+    "Specifications": "Waterproof",
+    "Price": "$338.90",
+    "Date of manufacture": "2022-05-05"
+  },
+  {
+    "id": 11,
+    "name": "Device 102",
+    "Specifications": "Compact",
+    "Price": "$817.14",
+    "Date of manufacture": "2025-03-01"
+  },
+  {
+    "id": 12,
+    "name": "Widget 324",
+    "Specifications": "Lightweight",
+    "Price": "$303.53",
+    "Date of manufacture": "2023-05-05"
+  },
+  {
+    "id": 13,
+    "name": "Item 368",
+    "Specifications": "Compact",
+    "Price": "$733.58",
+    "Date of manufacture": "2023-10-09"
+  },
+  {
+    "id": 14,
+    "name": "Item 342",
+    "Specifications": "Waterproof",
+    "Price": "$374.42",
+    "Date of manufacture": "2023-11-06"
+  },
+  {
+    "id": 15,
+    "name": "Item 722",
+    "Specifications": "Waterproof",
+    "Price": "$853.23",
+    "Date of manufacture": "2024-04-04"
+  },
+  {
+    "id": 16,
+    "name": "Thing 103",
+    "Specifications": "Lightweight",
+    "Price": "$765.20",
+    "Date of manufacture": "2021-07-27"
+  },
+  {
+    "id": 17,
+    "name": "Gadget 473",
+    "Specifications": "Waterproof",
+    "Price": "$395.37",
+    "Date of manufacture": "2025-04-25"
+  },
+  {
+    "id": 18,
+    "name": "Device 178",
+    "Specifications": "Waterproof",
+    "Price": "$883.34",
+    "Date of manufacture": "2021-10-24"
+  },
+  {
+    "id": 19,
+    "name": "Gadget 857",
+    "Specifications": "High performance",
+    "Price": "$290.52",
+    "Date of manufacture": "2021-11-14"
+  },
+  {
+    "id": 20,
+    "name": "Widget 544",
+    "Specifications": "Lightweight",
+    "Price": "$581.64",
+    "Date of manufacture": "2020-12-24"
+  },
+  {
+    "id": 21,
+    "name": "Item 641",
+    "Specifications": "Lightweight",
+    "Price": "$284.70",
+    "Date of manufacture": "2022-11-25"
+  },
+  {
+    "id": 22,
+    "name": "Thing 376",
+    "Specifications": "Lightweight",
+    "Price": "$864.94",
+    "Date of manufacture": "2022-08-26"
+  },
+  {
+    "id": 23,
+    "name": "Gadget 260",
+    "Specifications": "High performance",
+    "Price": "$770.14",
+    "Date of manufacture": "2024-11-16"
+  },
+  {
+    "id": 24,
+    "name": "Widget 151",
+    "Specifications": "Waterproof",
+    "Price": "$710.39",
+    "Date of manufacture": "2024-02-06"
+  },
+  {
+    "id": 25,
+    "name": "Gadget 397",
+    "Specifications": "Eco-friendly",
+    "Price": "$790.66",
+    "Date of manufacture": "2021-04-25"
+  },
+  {
+    "id": 26,
+    "name": "Device 334",
+    "Specifications": "Lightweight",
+    "Price": "$778.83",
+    "Date of manufacture": "2024-11-29"
+  },
+  {
+    "id": 27,
+    "name": "Thing 471",
+    "Specifications": "High performance",
+    "Price": "$868.84",
+    "Date of manufacture": "2021-12-16"
+  },
+  {
+    "id": 28,
+    "name": "Item 209",
+    "Specifications": "High performance",
+    "Price": "$718.63",
+    "Date of manufacture": "2022-01-23"
+  },
+  {
+    "id": 29,
+    "name": "Item 280",
+    "Specifications": "Lightweight",
+    "Price": "$154.68",
+    "Date of manufacture": "2022-01-08"
+  },
+  {
+    "id": 30,
+    "name": "Thing 892",
+    "Specifications": "Compact",
+    "Price": "$256.56",
+    "Date of manufacture": "2022-11-27"
+  },
+  {
+    "id": 31,
+    "name": "Widget 675",
+    "Specifications": "Lightweight",
+    "Price": "$743.74",
+    "Date of manufacture": "2023-12-30"
+  },
+  {
+    "id": 32,
+    "name": "Gadget 737",
+    "Specifications": "Compact",
+    "Price": "$632.31",
+    "Date of manufacture": "2024-04-28"
+  },
+  {
+    "id": 33,
+    "name": "Widget 986",
+    "Specifications": "Compact",
+    "Price": "$379.75",
+    "Date of manufacture": "2022-07-28"
+  },
+  {
+    "id": 34,
+    "name": "Device 549",
+    "Specifications": "Waterproof",
+    "Price": "$238.18",
+    "Date of manufacture": "2022-09-22"
+  },
+  {
+    "id": 35,
+    "name": "Widget 928",
+    "Specifications": "Lightweight",
+    "Price": "$500.21",
+    "Date of manufacture": "2021-11-05"
+  },
+  {
+    "id": 36,
+    "name": "Thing 976",
+    "Specifications": "High performance",
+    "Price": "$216.72",
+    "Date of manufacture": "2025-01-11"
+  },
+  {
+    "id": 37,
+    "name": "Widget 908",
+    "Specifications": "Compact",
+    "Price": "$785.14",
+    "Date of manufacture": "2020-07-11"
+  },
+  {
+    "id": 38,
+    "name": "Widget 368",
+    "Specifications": "Eco-friendly",
+    "Price": "$627.99",
+    "Date of manufacture": "2024-12-31"
+  },
+  {
+    "id": 39,
+    "name": "Widget 636",
+    "Specifications": "Compact",
+    "Price": "$839.61",
+    "Date of manufacture": "2021-02-16"
+  },
+  {
+    "id": 40,
+    "name": "Item 155",
+    "Specifications": "Compact",
+    "Price": "$223.91",
+    "Date of manufacture": "2024-12-02"
+  },
+  {
+    "id": 41,
+    "name": "Device 990",
+    "Specifications": "Waterproof",
+    "Price": "$354.71",
+    "Date of manufacture": "2022-08-06"
+  },
+  {
+    "id": 42,
+    "name": "Thing 689",
+    "Specifications": "Compact",
+    "Price": "$131.91",
+    "Date of manufacture": "2023-02-15"
+  },
+  {
+    "id": 43,
+    "name": "Thing 139",
+    "Specifications": "High performance",
+    "Price": "$428.53",
+    "Date of manufacture": "2021-08-14"
+  },
+  {
+    "id": 44,
+    "name": "Device 859",
+    "Specifications": "High performance",
+    "Price": "$284.44",
+    "Date of manufacture": "2023-11-24"
+  },
+  {
+    "id": 45,
+    "name": "Gadget 892",
+    "Specifications": "Lightweight",
+    "Price": "$463.97",
+    "Date of manufacture": "2022-04-25"
+  },
+  {
+    "id": 46,
+    "name": "Widget 972",
+    "Specifications": "Compact",
+    "Price": "$899.82",
+    "Date of manufacture": "2023-11-16"
+  },
+  {
+    "id": 47,
+    "name": "Gadget 225",
+    "Specifications": "Eco-friendly",
+    "Price": "$937.82",
+    "Date of manufacture": "2021-03-15"
+  },
+  {
+    "id": 48,
+    "name": "Widget 187",
+    "Specifications": "High performance",
+    "Price": "$85.41",
+    "Date of manufacture": "2023-11-05"
+  },
+  {
+    "id": 49,
+    "name": "Widget 155",
+    "Specifications": "Compact",
+    "Price": "$432.41",
+    "Date of manufacture": "2021-10-22"
+  },
+  {
+    "id": 50,
+    "name": "Widget 308",
+    "Specifications": "Compact",
+    "Price": "$364.43",
+    "Date of manufacture": "2023-05-07"
+  },
+  {
+    "id": 51,
+    "name": "Gadget 636",
+    "Specifications": "Waterproof",
+    "Price": "$129.03",
+    "Date of manufacture": "2020-08-16"
+  },
+  {
+    "id": 52,
+    "name": "Device 826",
+    "Specifications": "Lightweight",
+    "Price": "$206.98",
+    "Date of manufacture": "2023-11-01"
+  },
+  {
+    "id": 53,
+    "name": "Device 872",
+    "Specifications": "Waterproof",
+    "Price": "$304.45",
+    "Date of manufacture": "2023-02-25"
+  },
+  {
+    "id": 54,
+    "name": "Gadget 843",
+    "Specifications": "High performance",
+    "Price": "$126.47",
+    "Date of manufacture": "2021-04-17"
+  },
+  {
+    "id": 55,
+    "name": "Thing 622",
+    "Specifications": "High performance",
+    "Price": "$881.89",
+    "Date of manufacture": "2021-04-05"
+  },
+  {
+    "id": 56,
+    "name": "Gadget 972",
+    "Specifications": "Compact",
+    "Price": "$814.76",
+    "Date of manufacture": "2021-03-17"
+  },
+  {
+    "id": 57,
+    "name": "Widget 914",
+    "Specifications": "Compact",
+    "Price": "$460.36",
+    "Date of manufacture": "2023-02-27"
+  },
+  {
+    "id": 58,
+    "name": "Gadget 804",
+    "Specifications": "Eco-friendly",
+    "Price": "$680.14",
+    "Date of manufacture": "2023-02-13"
+  },
+  {
+    "id": 59,
+    "name": "Widget 969",
+    "Specifications": "High performance",
+    "Price": "$169.75",
+    "Date of manufacture": "2021-12-06"
+  },
+  {
+    "id": 60,
+    "name": "Thing 490",
+    "Specifications": "Lightweight",
+    "Price": "$442.26",
+    "Date of manufacture": "2022-07-31"
+  },
+  {
+    "id": 61,
+    "name": "Item 114",
+    "Specifications": "Waterproof",
+    "Price": "$97.31",
+    "Date of manufacture": "2022-11-09"
+  },
+  {
+    "id": 62,
+    "name": "Widget 406",
+    "Specifications": "Lightweight",
+    "Price": "$868.83",
+    "Date of manufacture": "2021-11-26"
+  },
+  {
+    "id": 63,
+    "name": "Device 437",
+    "Specifications": "Lightweight",
+    "Price": "$221.71",
+    "Date of manufacture": "2025-04-25"
+  },
+  {
+    "id": 64,
+    "name": "Item 282",
+    "Specifications": "Compact",
+    "Price": "$737.44",
+    "Date of manufacture": "2021-09-24"
+  },
+  {
+    "id": 65,
+    "name": "Thing 426",
+    "Specifications": "Lightweight",
+    "Price": "$454.76",
+    "Date of manufacture": "2020-12-01"
+  },
+  {
+    "id": 66,
+    "name": "Device 897",
+    "Specifications": "Eco-friendly",
+    "Price": "$351.61",
+    "Date of manufacture": "2020-08-03"
+  },
+  {
+    "id": 67,
+    "name": "Device 725",
+    "Specifications": "Waterproof",
+    "Price": "$694.65",
+    "Date of manufacture": "2024-11-18"
+  },
+  {
+    "id": 68,
+    "name": "Device 954",
+    "Specifications": "Eco-friendly",
+    "Price": "$936.14",
+    "Date of manufacture": "2023-09-19"
+  },
+  {
+    "id": 69,
+    "name": "Device 900",
+    "Specifications": "Compact",
+    "Price": "$948.22",
+    "Date of manufacture": "2024-07-03"
+  },
+  {
+    "id": 70,
+    "name": "Gadget 684",
+    "Specifications": "Compact",
+    "Price": "$621.93",
+    "Date of manufacture": "2022-02-02"
+  },
+  {
+    "id": 71,
+    "name": "Gadget 432",
+    "Specifications": "Compact",
+    "Price": "$501.50",
+    "Date of manufacture": "2024-05-21"
+  },
+  {
+    "id": 72,
+    "name": "Item 132",
+    "Specifications": "Waterproof",
+    "Price": "$678.13",
+    "Date of manufacture": "2023-05-15"
+  },
+  {
+    "id": 73,
+    "name": "Thing 689",
+    "Specifications": "Eco-friendly",
+    "Price": "$798.68",
+    "Date of manufacture": "2021-01-11"
+  },
+  {
+    "id": 74,
+    "name": "Widget 733",
+    "Specifications": "Lightweight",
+    "Price": "$907.69",
+    "Date of manufacture": "2022-11-27"
+  },
+  {
+    "id": 75,
+    "name": "Widget 775",
+    "Specifications": "High performance",
+    "Price": "$475.21",
+    "Date of manufacture": "2021-04-09"
+  },
+  {
+    "id": 76,
+    "name": "Thing 933",
+    "Specifications": "Eco-friendly",
+    "Price": "$81.86",
+    "Date of manufacture": "2022-08-01"
+  },
+  {
+    "id": 77,
+    "name": "Thing 554",
+    "Specifications": "Compact",
+    "Price": "$579.33",
+    "Date of manufacture": "2020-12-13"
+  },
+  {
+    "id": 78,
+    "name": "Thing 799",
+    "Specifications": "High performance",
+    "Price": "$182.78",
+    "Date of manufacture": "2023-04-23"
+  },
+  {
+    "id": 79,
+    "name": "Thing 607",
+    "Specifications": "Waterproof",
+    "Price": "$387.24",
+    "Date of manufacture": "2021-12-12"
+  },
+  {
+    "id": 80,
+    "name": "Gadget 492",
+    "Specifications": "Waterproof",
+    "Price": "$608.00",
+    "Date of manufacture": "2021-01-02"
+  },
+  {
+    "id": 81,
+    "name": "Device 229",
+    "Specifications": "Compact",
+    "Price": "$762.18",
+    "Date of manufacture": "2022-11-06"
+  },
+  {
+    "id": 82,
+    "name": "Widget 542",
+    "Specifications": "Waterproof",
+    "Price": "$69.49",
+    "Date of manufacture": "2021-09-18"
+  },
+  {
+    "id": 83,
+    "name": "Thing 345",
+    "Specifications": "Compact",
+    "Price": "$499.90",
+    "Date of manufacture": "2024-08-01"
+  },
+  {
+    "id": 84,
+    "name": "Gadget 916",
+    "Specifications": "Compact",
+    "Price": "$547.35",
+    "Date of manufacture": "2020-10-08"
+  },
+  {
+    "id": 85,
+    "name": "Item 408",
+    "Specifications": "Waterproof",
+    "Price": "$671.64",
+    "Date of manufacture": "2021-04-24"
+  },
+  {
+    "id": 86,
+    "name": "Device 649",
+    "Specifications": "Eco-friendly",
+    "Price": "$189.73",
+    "Date of manufacture": "2023-05-04"
+  },
+  {
+    "id": 87,
+    "name": "Gadget 670",
+    "Specifications": "Waterproof",
+    "Price": "$715.46",
+    "Date of manufacture": "2020-12-06"
+  },
+  {
+    "id": 88,
+    "name": "Gadget 916",
+    "Specifications": "High performance",
+    "Price": "$282.81",
+    "Date of manufacture": "2022-12-12"
+  },
+  {
+    "id": 89,
+    "name": "Item 728",
+    "Specifications": "High performance",
+    "Price": "$209.53",
+    "Date of manufacture": "2021-06-24"
+  },
+  {
+    "id": 90,
+    "name": "Item 460",
+    "Specifications": "Waterproof",
+    "Price": "$140.89",
+    "Date of manufacture": "2025-04-12"
+  },
+  {
+    "id": 91,
+    "name": "Widget 894",
+    "Specifications": "Lightweight",
+    "Price": "$746.13",
+    "Date of manufacture": "2022-10-19"
+  },
+  {
+    "id": 92,
+    "name": "Thing 988",
+    "Specifications": "Compact",
+    "Price": "$316.87",
+    "Date of manufacture": "2024-06-03"
+  },
+  {
+    "id": 93,
+    "name": "Device 613",
+    "Specifications": "Eco-friendly",
+    "Price": "$328.26",
+    "Date of manufacture": "2024-10-14"
+  },
+  {
+    "id": 94,
+    "name": "Thing 602",
+    "Specifications": "High performance",
+    "Price": "$688.81",
+    "Date of manufacture": "2023-03-20"
+  },
+  {
+    "id": 95,
+    "name": "Device 447",
+    "Specifications": "Lightweight",
+    "Price": "$704.91",
+    "Date of manufacture": "2023-08-12"
+  },
+  {
+    "id": 96,
+    "name": "Widget 122",
+    "Specifications": "Lightweight",
+    "Price": "$651.40",
+    "Date of manufacture": "2021-10-23"
+  },
+  {
+    "id": 97,
+    "name": "Widget 316",
+    "Specifications": "Lightweight",
+    "Price": "$284.11",
+    "Date of manufacture": "2025-02-16"
+  },
+  {
+    "id": 98,
+    "name": "Device 219",
+    "Specifications": "High performance",
+    "Price": "$602.86",
+    "Date of manufacture": "2021-09-11"
+  },
+  {
+    "id": 99,
+    "name": "Item 943",
+    "Specifications": "Lightweight",
+    "Price": "$846.91",
+    "Date of manufacture": "2022-07-22"
+  }
+]

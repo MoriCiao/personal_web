@@ -14,6 +14,20 @@
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
+.obeject-from .json-preview {
+  overflow-y: overlay;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+.obeject-from .search-box {
+  overflow-y: overlay;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.Open-Btn {
+  box-shadow: 2px 2px 2px black, inset 2px 2px 2px white;
+}
 
 .input-area {
   overflow: hidden;
