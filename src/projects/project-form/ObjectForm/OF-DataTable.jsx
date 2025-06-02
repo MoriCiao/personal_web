@@ -23,6 +23,7 @@ const DataTable = ({ data, setDataBase }) => {
               <th className="w-[0.3rem]">id</th>
               <th className="w-[10rem]">Name</th>
               <th className="w-[10rem]">Specifications</th>
+              <th className="w-[10rem]">Type</th>
               <th className="w-[0.8rem]">Price</th>
               <th className="w-[5rem]">DataDate</th>
               <th className="w-[0.5rem]">Del</th>
@@ -40,6 +41,7 @@ const DataTable = ({ data, setDataBase }) => {
                       <td>{d.ID}</td>
                       <td>{keyName}</td>
                       <td>{d[keyName]}</td>
+                      <td>{d.type}</td>
                       <td>{d.Price}</td>
                       <td>{d.DataDate}</td>
                       <td>
